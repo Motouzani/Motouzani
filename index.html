@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motouzani | Software Consultant & BMW Trainer</title>
+    <meta
+      name="description"
+      content="Motouzani helpt teams groeien met software consultancy, BMW training en agency delivery via DigitalFarmers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="logo" href="#home">motouzani.com</a>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">Over mij</a></li>
+          <li><a href="#work">Wat ik doe</a></li>
+          <li><a href="#proof">Resultaten</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">Software Consultant • Trainer • Teamleader</p>
+        <h1>Ik verbind <span>business impact</span> met <span>digitale uitvoering</span>.</h1>
+        <p class="hero-text">
+          Ik ben Motouzani: software consultant bij Carya, trainer binnen BMW HQ Belux en founder van
+          <strong>DigitalFarmers.be</strong>. Met +10 jaar ervaring bij BMW help ik teams sneller, slimmer en consistenter presteren.
+        </p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Plan een kennismaking</a>
+          <a href="#work" class="btn btn-ghost">Bekijk mijn aanpak</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <p class="eyebrow">Waarom met mij werken</p>
+          <h2>Drie werelden, één duidelijke meerwaarde</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Consultancy</h3>
+            <p>
+              Ik werk als software consultant voor Carya.eu en vertaal technische keuzes naar meetbare businesswaarde.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Training binnen BMW</h3>
+            <p>
+              Ik geef training in BMW HQ Belux en help teams met consistente standaarden, betere samenwerking en hogere kwaliteit.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Agency delivery</h3>
+            <p>
+              Met DigitalFarmers.be bouwen we software-oplossingen die ondernemingen helpen schalen zonder chaos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split reveal" id="work">
+        <div>
+          <p class="eyebrow">Mijn aanbod</p>
+          <h2>Van strategie tot uitvoering</h2>
+          <p>
+            Ik neem geen losse opdrachten aan zonder richting. We starten met helderheid: doel, prioriteiten, KPI’s, en dan bouwen we stap voor stap.
+          </p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>01 — Advisory</h3>
+            <p>Roadmaps, architectuurkeuzes, teamcoaching en kwaliteitsverbetering.</p>
+          </div>
+          <div class="pillar">
+            <h3>02 — Training</h3>
+            <p>Hands-on workshops voor operationele teams en leadership.</p>
+          </div>
+          <div class="pillar">
+            <h3>03 — Build</h3>
+            <p>End-to-end software trajecten via DigitalFarmers.be.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="proof">
+        <div class="section-head">
+          <p class="eyebrow">Ervaring die vertrouwen creëert</p>
+          <h2>Track record</h2>
+        </div>
+        <div class="metrics">
+          <article>
+            <p class="metric">10+ jaar</p>
+            <p>Teamleader Accident Advisor ervaring binnen BMW</p>
+          </article>
+          <article>
+            <p class="metric">BMW HQ Belux</p>
+            <p>Actieve trainer voor teams en operationele excellence</p>
+          </article>
+          <article>
+            <p class="metric">Carya + Agency</p>
+            <p>Combinatie van enterprise consultancy en ondernemerschap</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div>
+          <p class="eyebrow">Let’s build momentum</p>
+          <h2>Klaar om jouw team te versterken?</h2>
+          <p>
+            Stuur me een bericht voor consultancy, training of een softwareproject. Ik denk praktisch, snel en resultaatgericht mee.
+          </p>
+        </div>
+        <form class="contact-card" onsubmit="event.preventDefault()">
+          <label>
+            Naam
+            <input type="text" placeholder="Jouw naam" />
+          </label>
+          <label>
+            E-mail
+            <input type="email" placeholder="jij@bedrijf.be" />
+          </label>
+          <label>
+            Waarover?
+            <select>
+              <option>Consultancy</option>
+              <option>Training</option>
+              <option>Agency project</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
