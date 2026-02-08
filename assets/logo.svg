@@ -1,12 +1,6 @@
-<svg width="240" height="90" viewBox="0 0 240 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="1" y="1" width="238" height="88" rx="44" stroke="currentColor" stroke-width="2" opacity="0.5" />
-  <path
-    d="M32 64 C32 42, 40 30, 52 30 C60 30, 66 34, 70 42 C74 34, 80 30, 88 30 C104 30, 110 46, 110 64"
-    stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path
-    d="M122 30 C150 30, 166 30, 198 30 M160 30 C160 42, 160 52, 160 64"
-    stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path
-    d="M32 66 C56 74, 86 76, 208 66"
-    stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+<svg width="200" height="64" viewBox="0 0 200 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="198" height="62" rx="12" stroke="#0b5a3c" stroke-width="2" />
+  <path d="M28 48 V16 L52 40 L76 16 V48" stroke="#0b5a3c" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" />
+  <path d="M108 16 H172" stroke="#0b5a3c" stroke-width="6" stroke-linecap="square" />
+  <path d="M140 16 V48" stroke="#0b5a3c" stroke-width="6" stroke-linecap="square" />
 </svg>
