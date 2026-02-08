@@ -4,107 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Motouzani</title>
-    <meta
-      name="description"
-      content="Het verhaal van Motouzani: automotive expertise, training en systeemdenken in software." />
+    <meta name="description" content="Het verhaal van Motouzani: automotive expertise, training en systeemdenken." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Sans:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Mono:wght@400;500https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapdisplay=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="about">
-    <div class="grain"></div>
     <header class="page-hero">
       <nav class="nav">
         <a class="logo" href="index.html">
-          <img class="logo-mark" src="assets/logo.svg" alt="MT signature logo" />
+          <img class="logo-mark" src="assets/logo.svg" alt="MT logo" />
           <span class="logo-text">motouzani.com <span class="tm">™</span></span>
         </a>
         <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn" data-lang="nl">NL</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
           <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
             <span class="theme-icon">◐</span>
           </button>
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a class="active" href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="work.html" data-i18n="nav_work">Work</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="page-head reveal">
-        <p class="eyebrow">About</p>
-        <h1>Mens, vakman, systeemdenker</h1>
-        <p class="hero-text">
+      <div class="page-head">
+        <p class="eyebrow" data-i18n="about_eyebrow">ABOUT</p>
+        <h1 data-i18n="about_title">Mens, vakman, systeemdenker</h1>
+        <p class="hero-text" data-i18n="about_intro">
           Van carrosserie en special painting tot enterprise consultancy: ik verbind vakmanschap met technologie.
         </p>
-        <p class="hero-sub">EN — From workshop floor to enterprise systems: I bridge craft and tech.</p>
-        <p class="hero-sub">FR — De l’atelier aux systèmes d’entreprise: je relie métier et technologie.</p>
       </div>
     </header>
 
     <main>
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">Story</p>
-          <h2>Een traject gebouwd op respect voor het werk</h2>
+          <p class="eyebrow" data-i18n="about_story_eyebrow">STORY</p>
+          <h2 data-i18n="about_story_title">Een traject gebouwd op respect voor het werk</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
-            <span class="timeline-year">2008</span>
+            <span class="timeline-year" data-i18n="about_year_1">2008</span>
             <div>
-              <h3>Carrosserier & special painting</h3>
-              <p>Afgestudeerd en meteen aan de slag bij BMW Jorssen Zuid.</p>
+              <h3 data-i18n="about_event_1_title">Carrosserier & special painting</h3>
+              <p data-i18n="about_event_1_body">Afgestudeerd en meteen aan de slag bij BMW Jorssen Zuid.</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-year">2013+</span>
+            <span class="timeline-year" data-i18n="about_year_2">2013+</span>
             <div>
-              <h3>Teamleader Accident Advisor</h3>
-              <p>Groeide door tot leidinggevende rol met focus op kwaliteit en coaching.</p>
+              <h3 data-i18n="about_event_2_title">Teamleader Accident Advisor</h3>
+              <p data-i18n="about_event_2_body">Groeide door met focus op kwaliteit en coaching.</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-year">Vandaag</span>
+            <span class="timeline-year" data-i18n="about_year_3">Vandaag</span>
             <div>
-              <h3>Consultant, trainer, founder</h3>
-              <p>Software consultant in automotive, trainer binnen BMW HQ Belux, founder van DigitalFarmers.be.</p>
+              <h3 data-i18n="about_event_3_title">Consultant, trainer, founder</h3>
+              <p data-i18n="about_event_3_body">Automotive software consultant, BMW trainer, founder van DigitalFarmers.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section split reveal">
+      <section class="section split">
         <div>
-          <p class="eyebrow">Values</p>
-          <h2>Waarom teams zich verbonden voelen</h2>
-          <p>Ik werk vanuit vertrouwen, duidelijke communicatie en respect voor de realiteit op de werkvloer.</p>
+          <p class="eyebrow" data-i18n="about_values_eyebrow">VALUES</p>
+          <h2 data-i18n="about_values_title">Waarom teams zich verbonden voelen</h2>
+          <p data-i18n="about_values_body">Ik werk vanuit vertrouwen, duidelijke communicatie en respect voor de realiteit op de werkvloer.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Menselijkheid</h3>
-            <p>Ik luister eerst. Pas dan bouw ik een oplossing.</p>
+            <h3 data-i18n="about_value_1_title">Menselijkheid</h3>
+            <p data-i18n="about_value_1_body">Ik luister eerst. Pas dan bouw ik een oplossing.</p>
           </article>
           <article class="card">
-            <h3>Precisie</h3>
-            <p>Automotive is detail. Dat respecteer ik in elk proces.</p>
+            <h3 data-i18n="about_value_2_title">Precisie</h3>
+            <p data-i18n="about_value_2_body">Automotive is detail. Dat respecteer ik in elk proces.</p>
           </article>
           <article class="card">
-            <h3>Ownership</h3>
-            <p>We maken systemen die teams zelf blijven dragen.</p>
+            <h3 data-i18n="about_value_3_title">Ownership</h3>
+            <p data-i18n="about_value_3_body">We maken systemen die teams zelf blijven dragen.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+      <div class="footer-row">
+        <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" data-lang="nl">NL</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

@@ -40,10 +40,6 @@ body {
   line-height: 1.6;
 }
 
-.grain {
-  display: none;
-}
-
 .nav {
   width: min(1140px, 92%);
   margin: 0 auto;
@@ -109,6 +105,28 @@ body {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lang-btn {
+  background: var(--bg-soft);
+  border: none;
+  padding: 0.35rem 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: #fff;
 }
 
 .theme-toggle {
@@ -183,9 +201,11 @@ h1 span {
   font-size: 1.05rem;
 }
 
-.hero-sub {
-  margin: 0.35rem 0 0;
-  color: var(--ink-soft);
+.hero-bullets {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
   font-size: 0.95rem;
 }
 
@@ -266,7 +286,6 @@ h1 span {
 .hero-panel {
   position: relative;
   padding: 1.6rem;
-  z-index: 1;
 }
 
 .panel-label {
@@ -370,12 +389,6 @@ h1 span {
 .stack-title {
   margin: 0 0 0.35rem;
   font-weight: 600;
-}
-
-.visual-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
 }
 
 .feature-grid {
@@ -524,6 +537,14 @@ textarea {
   color: var(--ink-soft);
 }
 
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .connection {
   display: grid;
   gap: 1rem;
@@ -593,22 +614,10 @@ textarea {
   font-style: italic;
 }
 
-.reveal {
-  opacity: 1;
-  transform: none;
-}
-
-.lang {
-  margin-top: 0.6rem;
-  color: var(--ink-soft);
-  font-size: 0.95rem;
-}
-
 @media (max-width: 980px) {
   .cards,
   .metrics,
   .system-grid,
-  .visual-grid,
   .feature-grid,
   .split,
   .contact {

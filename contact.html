@@ -8,100 +8,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Sans:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Mono:wght@400;500https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapdisplay=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="contact">
-    <div class="grain"></div>
     <header class="page-hero">
       <nav class="nav">
         <a class="logo" href="index.html">
-          <img class="logo-mark" src="assets/logo.svg" alt="MT signature logo" />
+          <img class="logo-mark" src="assets/logo.svg" alt="MT logo" />
           <span class="logo-text">motouzani.com <span class="tm">™</span></span>
         </a>
         <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn" data-lang="nl">NL</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
           <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
             <span class="theme-icon">◐</span>
           </button>
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="work.html" data-i18n="nav_work">Work</a></li>
+          <li><a class="active" href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="page-head reveal">
-        <p class="eyebrow">Contact</p>
-        <h1>Laten we samenwerken</h1>
-        <p class="hero-text">Ik reageer snel en praktisch. Kies de route die het beste past.</p>
-        <p class="hero-sub">EN — Fast replies, clear next steps.</p>
-        <p class="hero-sub">FR — Réponse rapide et orientation claire.</p>
+      <div class="page-head">
+        <p class="eyebrow" data-i18n="contact_eyebrow">CONTACT</p>
+        <h1 data-i18n="contact_title">Laten we samenwerken</h1>
+        <p class="hero-text" data-i18n="contact_intro">Ik reageer snel en praktisch. Kies de route die het beste past.</p>
       </div>
     </header>
 
     <main>
-      <section class="section contact reveal">
+      <section class="section contact">
         <div>
-          <p class="eyebrow">Directe lijnen</p>
-          <h2>Plan een kennismaking</h2>
-          <p>Consultancy, training of een softwaretraject — we starten met een korte intake.</p>
+          <p class="eyebrow" data-i18n="contact_form_eyebrow">DIRECTE LIJNEN</p>
+          <h2 data-i18n="contact_form_title">Plan een kennismaking</h2>
+          <p data-i18n="contact_form_body">Consultancy, training of een softwaretraject — we starten met een korte intake.</p>
         </div>
         <form class="contact-card" onsubmit="event.preventDefault()">
           <div class="form-row">
             <label>
-              Naam
-              <input type="text" placeholder="Jouw naam" />
+              <span data-i18n="form_name">Naam</span>
+              <input type="text" placeholder="" />
             </label>
             <label>
-              E-mail
-              <input type="email" placeholder="jij@bedrijf.be" />
+              <span data-i18n="form_email">E-mail</span>
+              <input type="email" placeholder="" />
             </label>
           </div>
           <div class="form-row">
             <label>
-              Bedrijf
-              <input type="text" placeholder="Bedrijfsnaam" />
+              <span data-i18n="form_company">Bedrijf</span>
+              <input type="text" placeholder="" />
             </label>
             <label>
-              Waarover?
+              <span data-i18n="form_topic">Waarover?</span>
               <select>
-                <option>Consultancy</option>
-                <option>Training</option>
-                <option>Agency project</option>
+                <option data-i18n="form_opt_1">Consultancy</option>
+                <option data-i18n="form_opt_2">Training</option>
+                <option data-i18n="form_opt_3">Agency project</option>
               </select>
             </label>
           </div>
           <label>
-            Message
-            <textarea rows="5" placeholder="Vertel kort wat je wil bereiken."></textarea>
+            <span data-i18n="form_msg">Message</span>
+            <textarea rows="5" placeholder=""></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
-          <p class="form-note">Ik antwoord meestal binnen 24 uur.</p>
+          <button class="btn btn-primary" type="submit" data-i18n="form_submit">Verstuur aanvraag</button>
+          <p class="form-note" data-i18n="form_note">Ik antwoord meestal binnen 24 uur.</p>
         </form>
       </section>
 
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">Contact opties</p>
-          <h2>Snelle routes</h2>
+          <p class="eyebrow" data-i18n="contact_channels_eyebrow">CONTACT OPTIES</p>
+          <h2 data-i18n="contact_channels_title">Snelle routes</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>E-mail</h3>
+            <h3 data-i18n="contact_email_title">E-mail</h3>
             <p>contact@motouzani.com</p>
           </article>
           <article class="card">
-            <h3>WhatsApp</h3>
+            <h3 data-i18n="contact_whatsapp_title">WhatsApp</h3>
             <p>+32 000 00 00 00</p>
           </article>
           <article class="card">
-            <h3>LinkedIn</h3>
+            <h3 data-i18n="contact_linkedin_title">LinkedIn</h3>
             <p>linkedin.com/in/motouzani</p>
           </article>
         </div>
@@ -109,7 +111,14 @@
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+      <div class="footer-row">
+        <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" data-lang="nl">NL</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

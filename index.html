@@ -11,69 +11,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Sans:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Mono:wght@400;500https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapdisplay=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
-    <div class="grain"></div>
     <header class="hero" id="home">
       <nav class="nav">
         <a class="logo" href="index.html">
-          <img class="logo-mark" src="assets/logo.svg" alt="MT signature logo" />
+          <img class="logo-mark" src="assets/logo.svg" alt="MT logo" />
           <span class="logo-text">motouzani.com <span class="tm">™</span></span>
         </a>
         <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn" data-lang="nl">NL</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
           <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
             <span class="theme-icon">◐</span>
           </button>
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="work.html" data-i18n="nav_work">Work</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="hero-grid reveal">
+      <div class="hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Automotive • Software • Training</p>
-          <h1>Ik ontwerp <span>systemen</span> die teams en dealers <span>vlotter laten presteren</span>.</h1>
-          <p class="hero-text">
-            Ik ben Motouzani: software consultant in de automotive sector, trainer binnen BMW HQ Belux
-            en founder van <strong>DigitalFarmers.be</strong>. Als systeemdenker met 20+ jaar automotive ervaring
-            help ik organisaties workflow, kwaliteit en klantimpact tegelijk versterken.
+          <p class="eyebrow" data-i18n="hero_eyebrow">AUTOMOTIVE · SOFTWARE · TRAINING</p>
+          <h1 data-i18n="hero_title">Ik ontwerp systemen die teams en dealers vlotter laten presteren.</h1>
+          <p class="hero-text" data-i18n="hero_body">
+            Ik ben Motouzani: software consultant in automotive, trainer binnen BMW HQ Belux en founder van
+            DigitalFarmers.be. Als systeemdenker help ik organisaties workflow, kwaliteit en klantimpact tegelijk versterken.
           </p>
-          <p class="hero-sub">
-            EN — I design operational systems that help dealerships move faster, with less friction.
-          </p>
-          <p class="hero-sub">
-            FR — Je conçois des systèmes opérationnels pour accélérer la performance des réseaux automobiles.
-          </p>
+          <div class="hero-bullets">
+            <span data-i18n="hero_b1">⚡ Tech‑savvy</span>
+            <span data-i18n="hero_b2">🧠 Systeemdenken</span>
+            <span data-i18n="hero_b3">🤝 Menselijk leiderschap</span>
+          </div>
           <div class="cta-row">
-            <a href="contact.html" class="btn btn-primary">Plan een kennismaking</a>
-            <a href="work.html" class="btn btn-ghost">Bekijk mijn aanpak</a>
+            <a href="contact.html" class="btn btn-primary" data-i18n="cta_primary">Plan een kennismaking</a>
+            <a href="work.html" class="btn btn-ghost" data-i18n="cta_secondary">Bekijk mijn aanpak</a>
           </div>
           <div class="hero-badges">
-            <span>BMW CFD Training Center partner</span>
-            <span>4,7/5 tevredenheid</span>
+            <span data-i18n="hero_badge_1">BMW CFD Training Center partner</span>
+            <span data-i18n="hero_badge_2">4,7/5 tevredenheid</span>
           </div>
         </div>
         <div class="hero-visual">
           <div class="tech-grid"></div>
           <div class="hero-panel">
-            <p class="panel-label">SYSTEM BLUEPRINT</p>
-            <h3>Operational clarity</h3>
-            <p>Workflow, quality, delivery — aligned as one system.</p>
+            <p class="panel-label" data-i18n="panel_label">SYSTEM BLUEPRINT</p>
+            <h3 data-i18n="panel_title">Operational clarity</h3>
+            <p data-i18n="panel_body">Workflow, quality, delivery — aligned as one system.</p>
             <div class="panel-metrics">
-              <span>clarity</span>
-              <span>flow</span>
-              <span>feedback</span>
+              <span data-i18n="panel_m1">clarity</span>
+              <span data-i18n="panel_m2">flow</span>
+              <span data-i18n="panel_m3">feedback</span>
             </div>
           </div>
           <div class="tech-pill">systems · automotive · delivery</div>
@@ -82,161 +84,121 @@
     </header>
 
     <main>
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">GitHub-level clarity</p>
-          <h2>Minimalistisch, technisch, en meteen menselijk</h2>
+          <p class="eyebrow" data-i18n="value_eyebrow">GITHUB‑LEVEL CLARITY</p>
+          <h2 data-i18n="value_title">Minimalistisch, technisch, én menselijk</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Verbinding</h3>
-            <p>Ik praat in mensentaal, en maak complexe systemen begrijpelijk voor elk team.</p>
+            <h3 data-i18n="value_1_title">Vertrouwen</h3>
+            <p data-i18n="value_1_body">Ik vertaal complexiteit naar helderheid en richting.</p>
           </article>
           <article class="card">
-            <h3>Focus</h3>
-            <p>We kiezen één duidelijke richting en maken die zichtbaar in elke stap van het proces.</p>
+            <h3 data-i18n="value_2_title">Impact</h3>
+            <p data-i18n="value_2_body">Elke stap is meetbaar en linked aan resultaat.</p>
           </article>
           <article class="card">
-            <h3>Afwerking</h3>
-            <p>Details doen ertoe: workflows, training en delivery voelen premium aan.</p>
+            <h3 data-i18n="value_3_title">Rust</h3>
+            <p data-i18n="value_3_body">Teams werken sneller zonder chaos.</p>
           </article>
         </div>
       </section>
 
-      <section class="section split reveal">
-        <div>
-          <p class="eyebrow">System thinker</p>
-          <h2>Geen losse tools — één samenhangend systeem</h2>
-          <p>
-            Ik werk bij de grootste dealers om workflow en rendement te optimaliseren. We brengen knelpunten in kaart,
-            standaardiseren de flow en bouwen feedback loops die teams zelf blijven verbeteren.
-          </p>
-          <p class="lang">EN — From intake to delivery, every step becomes measurable and repeatable.</p>
-          <p class="lang">FR — De l’accueil à la livraison, chaque étape devient mesurable et répétable.</p>
-        </div>
-        <div class="system-stack">
-          <div class="stack-card">
-            <p class="stack-title">Flow mapping</p>
-            <p>We maken zichtbaar wat vertraagt en waarom.</p>
-          </div>
-          <div class="stack-card">
-            <p class="stack-title">Standards</p>
-            <p>Consistentie = snelheid zonder kwaliteit te verliezen.</p>
-          </div>
-          <div class="stack-card">
-            <p class="stack-title">Feedback loops</p>
-            <p>We borgen verbeteringen zodat het systeem blijft groeien.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="visuals">
+      <section class="section" id="visuals">
         <div class="section-head">
-          <p class="eyebrow">Visual depth</p>
-          <h2>Mens + wagen + technologie</h2>
+          <p class="eyebrow" data-i18n="roles_eyebrow">ROL & IDENTITEIT</p>
+          <h2 data-i18n="roles_title">Tech‑savvy. Entrepreneur. Leader. Speaker.</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <div class="feature-icon">
-              <span>⚡</span>
-            </div>
-            <p class="visual-title">Speaker</p>
-            <p class="visual-text">Heldere communicatie die teams in beweging zet.</p>
+            <div class="feature-icon"><span>🎤</span></div>
+            <p class="visual-title" data-i18n="role_1_title">Speaker</p>
+            <p class="visual-text" data-i18n="role_1_body">Heldere communicatie die teams in beweging zet.</p>
           </article>
           <article class="feature-card">
-            <div class="feature-icon">
-              <span>⛭</span>
-            </div>
-            <p class="visual-title">System thinker</p>
-            <p class="visual-text">Processen die sneller, consistenter en schaalbaar worden.</p>
+            <div class="feature-icon"><span>⚙️</span></div>
+            <p class="visual-title" data-i18n="role_2_title">System thinker</p>
+            <p class="visual-text" data-i18n="role_2_body">Processen die sneller, consistenter en schaalbaar worden.</p>
           </article>
           <article class="feature-card">
-            <div class="feature-icon">
-              <span>▣</span>
-            </div>
-            <p class="visual-title">Entrepreneur</p>
-            <p class="visual-text">Oplossingen die bedrijven echt verder brengen.</p>
+            <div class="feature-icon"><span>🚀</span></div>
+            <p class="visual-title" data-i18n="role_3_title">Entrepreneur</p>
+            <p class="visual-text" data-i18n="role_3_body">Oplossingen die bedrijven echt vooruit brengen.</p>
           </article>
         </div>
       </section>
 
-      <section class="section split reveal">
+      <section class="section split">
         <div class="connection">
-          <p class="eyebrow">Verbinding</p>
-          <h2>Een gezicht achter het systeem</h2>
-          <p>
-            Mensen vertrouwen mensen. Daarom laat ik zien wie er achter het resultaat zit:
-            rustig, helder, en volledig toegewijd aan kwaliteit.
+          <p class="eyebrow" data-i18n="connect_eyebrow">VERBINDING</p>
+          <h2 data-i18n="connect_title">Een gezicht achter het systeem</h2>
+          <p data-i18n="connect_body">
+            Mensen vertrouwen mensen. Daarom combineer ik precisie met menselijkheid — zodat teams zich veilig voelen om te groeien.
           </p>
           <div class="icon-row">
-            <div class="icon-item">
-              <span class="icon-badge">⟡</span>
-              <p>Rust & focus</p>
-            </div>
-            <div class="icon-item">
-              <span class="icon-badge">⌁</span>
-              <p>Menselijke connectie</p>
-            </div>
-            <div class="icon-item">
-              <span class="icon-badge">⟁</span>
-              <p>Systemische impact</p>
-            </div>
+            <div class="icon-item"><span class="icon-badge">🤝</span><p data-i18n="connect_1">Menselijk leiderschap</p></div>
+            <div class="icon-item"><span class="icon-badge">📈</span><p data-i18n="connect_2">Meetbare verbetering</p></div>
+            <div class="icon-item"><span class="icon-badge">🛠️</span><p data-i18n="connect_3">Praktische uitvoering</p></div>
           </div>
         </div>
         <div class="profile-card">
           <div class="profile-initials">MT</div>
           <div class="profile-meta">
             <p class="profile-name">Motouzani</p>
-            <p class="profile-role">Consultant • Leader • Speaker</p>
+            <p class="profile-role" data-i18n="profile_role">Consultant • Leader • Speaker</p>
           </div>
-          <p class="profile-quote">
-            “Ik maak systemen die mensen sterker maken — niet andersom.”
-          </p>
+          <p class="profile-quote" data-i18n="profile_quote">“Ik maak systemen die mensen sterker maken — niet andersom.”</p>
         </div>
       </section>
 
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">Track record</p>
-          <h2>Ervaring die vertrouwen creëert</h2>
+          <p class="eyebrow" data-i18n="track_eyebrow">TRACK RECORD</p>
+          <h2 data-i18n="track_title">Ervaring die vertrouwen creëert</h2>
         </div>
         <div class="partner-row">
-          <span class="partner-label">Partner</span>
+          <span class="partner-label" data-i18n="partner_label">Partner</span>
           <span class="partner-name">BMW CFD Training Center</span>
         </div>
         <div class="metrics">
           <article>
-            <p class="metric">20+ jaar</p>
-            <p>Automotive ervaring, gestart als carrosserier & special painting (2008)</p>
+            <p class="metric" data-i18n="metric_1_title">20+ jaar</p>
+            <p data-i18n="metric_1_body">Automotive ervaring, gestart als carrosserier & special painting (2008)</p>
           </article>
           <article>
-            <p class="metric">BMW Jorssen Zuid</p>
-            <p>Startte op de vloer, later Teamleader Accident Advisor</p>
+            <p class="metric" data-i18n="metric_2_title">BMW Jorssen Zuid</p>
+            <p data-i18n="metric_2_body">Startte op de vloer, later Teamleader Accident Advisor</p>
           </article>
           <article>
-            <p class="metric">Enterprise + Agency</p>
-            <p>Ik optimaliseer workflows bij grote dealers en bouw oplossingen voor tientallen klanten</p>
+            <p class="metric" data-i18n="metric_3_title">Enterprise + Agency</p>
+            <p data-i18n="metric_3_body">Ik optimaliseer workflows bij grote dealers en bouw oplossingen voor tientallen klanten</p>
           </article>
         </div>
       </section>
 
-      <section class="section contact reveal">
+      <section class="section contact">
         <div>
-          <p class="eyebrow">Let’s build momentum</p>
-          <h2>Klaar om jouw team te versterken?</h2>
-          <p>
-            Stuur me een bericht voor consultancy, training of een softwareproject. Ik denk praktisch, snel en resultaatgericht mee.
-          </p>
+          <p class="eyebrow" data-i18n="cta_eyebrow">LET’S BUILD MOMENTUM</p>
+          <h2 data-i18n="cta_title">Klaar om jouw team te versterken?</h2>
+          <p data-i18n="cta_body">Stuur me een bericht voor consultancy, training of een softwareproject.</p>
         </div>
         <div class="contact-card">
-          <a class="contact-link" href="contact.html">Ga naar contact →</a>
-          <p class="contact-note">Directe route naar een heldere intake.</p>
+          <a class="contact-link" href="contact.html" data-i18n="cta_link">Ga naar contact →</a>
+          <p class="contact-note" data-i18n="cta_note">Directe route naar een heldere intake.</p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+      <div class="footer-row">
+        <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" data-lang="nl">NL</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

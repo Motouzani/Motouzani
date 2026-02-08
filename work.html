@@ -8,89 +8,98 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Sans:wght@400;500;600;700https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapfamily=IBM+Plex+Mono:wght@400;500https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swapdisplay=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="work">
-    <div class="grain"></div>
     <header class="page-hero">
       <nav class="nav">
         <a class="logo" href="index.html">
-          <img class="logo-mark" src="assets/logo.svg" alt="MT signature logo" />
+          <img class="logo-mark" src="assets/logo.svg" alt="MT logo" />
           <span class="logo-text">motouzani.com <span class="tm">™</span></span>
         </a>
         <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn" data-lang="nl">NL</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
           <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
             <span class="theme-icon">◐</span>
           </button>
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a class="active" href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a class="active" href="work.html" data-i18n="nav_work">Work</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="page-head reveal">
-        <p class="eyebrow">Work</p>
-        <h1>Consultancy, training en agency delivery</h1>
-        <p class="hero-text">Ik combineer enterprise consulting met een agency die oplossingen levert.</p>
-        <p class="hero-sub">EN — Strategy, training and build in one flow.</p>
-        <p class="hero-sub">FR — Conseil, formation et delivery intégrés.</p>
+      <div class="page-head">
+        <p class="eyebrow" data-i18n="work_eyebrow">WORK</p>
+        <h1 data-i18n="work_title">Consultancy, training en agency delivery</h1>
+        <p class="hero-text" data-i18n="work_intro">Ik combineer enterprise consulting met een agency die oplossingen levert.</p>
       </div>
     </header>
 
     <main>
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">Services</p>
-          <h2>Wat we samen kunnen realiseren</h2>
+          <p class="eyebrow" data-i18n="work_services_eyebrow">SERVICES</p>
+          <h2 data-i18n="work_services_title">Wat we samen kunnen realiseren</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Consultancy</h3>
-            <p>Strategie, roadmap, teamcoaching en kwaliteitsverbetering.</p>
+            <h3 data-i18n="work_service_1_title">Consultancy</h3>
+            <p data-i18n="work_service_1_body">Strategie, roadmap, teamcoaching en kwaliteitsverbetering.</p>
           </article>
           <article class="card">
-            <h3>Training</h3>
-            <p>Hands-on workshops voor operationele teams en leadership.</p>
+            <h3 data-i18n="work_service_2_title">Training</h3>
+            <p data-i18n="work_service_2_body">Hands‑on workshops voor operationele teams en leadership.</p>
           </article>
           <article class="card">
-            <h3>Build</h3>
-            <p>End-to-end software trajecten via DigitalFarmers.be.</p>
+            <h3 data-i18n="work_service_3_title">Build</h3>
+            <p data-i18n="work_service_3_body">End‑to‑end software trajecten via DigitalFarmers.be.</p>
           </article>
         </div>
       </section>
 
-      <section class="section reveal">
+      <section class="section">
         <div class="section-head">
-          <p class="eyebrow">Impact</p>
-          <h2>Resultaten die je voelt op de vloer</h2>
+          <p class="eyebrow" data-i18n="work_impact_eyebrow">IMPACT</p>
+          <h2 data-i18n="work_impact_title">Resultaten die je voelt op de vloer</h2>
         </div>
         <div class="metrics">
           <article>
-            <p class="metric">Workflow</p>
-            <p>Snellere doorlooptijd, duidelijk ownership, minder rework.</p>
+            <p class="metric" data-i18n="work_impact_1_title">Workflow</p>
+            <p data-i18n="work_impact_1_body">Snellere doorlooptijd, duidelijk ownership, minder rework.</p>
           </article>
           <article>
-            <p class="metric">Kwaliteit</p>
-            <p>Consistente standaarden die teams zelf blijven borgen.</p>
+            <p class="metric" data-i18n="work_impact_2_title">Kwaliteit</p>
+            <p data-i18n="work_impact_2_body">Consistente standaarden die teams zelf blijven borgen.</p>
           </article>
           <article>
-            <p class="metric">Digitale flow</p>
-            <p>Tools die data, teams en klanten verbinden.</p>
+            <p class="metric" data-i18n="work_impact_3_title">Digitale flow</p>
+            <p data-i18n="work_impact_3_body">Tools die data, teams en klanten verbinden.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+      <div class="footer-row">
+        <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" data-lang="nl">NL</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
