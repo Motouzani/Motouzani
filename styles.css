@@ -253,13 +253,6 @@ h1 span {
   overflow: hidden;
 }
 
-.hero-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .tech-grid {
   position: absolute;
   inset: 0;
@@ -268,6 +261,37 @@ h1 span {
   background-size: 28px 28px;
   opacity: 0.2;
   pointer-events: none;
+}
+
+.hero-panel {
+  position: relative;
+  padding: 1.6rem;
+  z-index: 1;
+}
+
+.panel-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  margin: 0 0 0.6rem;
+}
+
+.panel-metrics {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+}
+
+.panel-metrics span {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-soft);
 }
 
 .tech-pill {
@@ -354,23 +378,29 @@ h1 span {
   gap: 1rem;
 }
 
-.visual {
-  height: 210px;
-  border-radius: 8px;
-  margin-bottom: 0.9rem;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--bg-soft);
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.visual::after {
-  content: "";
-  position: absolute;
-  inset: 12% 18%;
+.feature-card {
+  border: 1px solid var(--line);
   border-radius: 8px;
-  border: 1px dashed rgba(13, 17, 23, 0.18);
-  opacity: 0.7;
+  padding: 1rem;
+  background: var(--card);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  font-family: var(--mono);
+  margin-bottom: 0.6rem;
 }
 
 .visual-title {
@@ -526,28 +556,41 @@ textarea {
   background: var(--bg-soft);
 }
 
-.portrait-card {
+.profile-card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  overflow: hidden;
+  padding: 1.4rem;
   background: var(--card);
+}
+
+.profile-initials {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
   display: grid;
-}
-
-.portrait-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.portrait-note {
-  margin: 0;
-  padding: 0.8rem 1rem;
-  border-top: 1px solid var(--line);
-  color: var(--ink-soft);
-  font-size: 0.9rem;
+  place-items: center;
+  font-weight: 700;
+  font-family: var(--mono);
+  color: var(--accent);
+  border: 1px solid var(--line);
   background: var(--bg-soft);
+  margin-bottom: 0.8rem;
+}
+
+.profile-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.profile-role {
+  margin: 0.2rem 0 0.8rem;
+  color: var(--ink-soft);
+}
+
+.profile-quote {
+  margin: 0;
+  color: var(--ink-soft);
+  font-style: italic;
 }
 
 .reveal {
@@ -566,6 +609,7 @@ textarea {
   .metrics,
   .system-grid,
   .visual-grid,
+  .feature-grid,
   .split,
   .contact {
     grid-template-columns: 1fr;
