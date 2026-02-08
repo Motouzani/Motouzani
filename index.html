@@ -11,18 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <div class="grain"></div>
     <header class="hero" id="home">
       <nav class="nav">
-        <a class="logo" href="#home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          motouzani.com
+        <a class="logo" href="index.html">
+          <span class="logo-mark">MT</span>
+          <span class="logo-text">motouzani.com</span>
         </a>
         <div class="nav-actions">
           <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
@@ -31,26 +31,32 @@
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
-          <li><a href="#about">Over mij</a></li>
-          <li><a href="#work">Wat ik doe</a></li>
-          <li><a href="#system">Systeemdenken</a></li>
-          <li><a href="#proof">Resultaten</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="systems.html">Systems</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
       <div class="hero-grid reveal">
         <div class="hero-content">
-          <p class="eyebrow">Software Consultant • Automotive • Training</p>
+          <p class="eyebrow">Automotive • Software • Training</p>
           <h1>Ik ontwerp <span>systemen</span> die teams en dealers <span>vlotter laten presteren</span>.</h1>
           <p class="hero-text">
             Ik ben Motouzani: software consultant in de automotive sector, trainer binnen BMW HQ Belux
             en founder van <strong>DigitalFarmers.be</strong>. Als systeemdenker met 20+ jaar automotive ervaring
             help ik organisaties workflow, kwaliteit en klantimpact tegelijk versterken.
           </p>
+          <p class="hero-sub">
+            EN — I design operational systems that help dealerships move faster, with less friction.
+          </p>
+          <p class="hero-sub">
+            FR — Je conçois des systèmes opérationnels pour accélérer la performance des réseaux automobiles.
+          </p>
           <div class="cta-row">
-            <a href="#contact" class="btn btn-primary">Plan een kennismaking</a>
-            <a href="#work" class="btn btn-ghost">Bekijk mijn aanpak</a>
+            <a href="contact.html" class="btn btn-primary">Plan een kennismaking</a>
+            <a href="work.html" class="btn btn-ghost">Bekijk mijn aanpak</a>
           </div>
           <div class="hero-badges">
             <span>BMW CFD Training Center partner</span>
@@ -61,15 +67,10 @@
           <div class="orb orb-one"></div>
           <div class="orb orb-two"></div>
           <div class="voice">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span><span></span>
           </div>
           <div class="signal">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </div>
           <div class="speaker-card">
             <p class="speaker-title">In gesprek met teams</p>
@@ -80,61 +81,58 @@
     </header>
 
     <main>
-      <section class="section reveal" id="about">
+      <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Waarom met mij werken</p>
-          <h2>Drie werelden, één duidelijke meerwaarde</h2>
+          <p class="eyebrow">Waarom het voelt als Apple</p>
+          <h2>Rust, helderheid en vertrouwen — vanaf de eerste seconde</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Consultancy</h3>
-            <p>
-              Software consultant in de automotive business (Carya). Ik werk bij de grootste dealers om workflow en rendement te optimaliseren.
-            </p>
+            <h3>Verbinding</h3>
+            <p>Ik praat in mensentaal, en maak complexe systemen begrijpelijk voor elk team.</p>
           </article>
           <article class="card">
-            <h3>Training binnen BMW</h3>
-            <p>
-              Ik geef training in BMW HQ Belux en help teams met consistente standaarden, betere samenwerking en hogere kwaliteit.
-            </p>
+            <h3>Focus</h3>
+            <p>We kiezen één duidelijke richting en maken die zichtbaar in elke stap van het proces.</p>
           </article>
           <article class="card">
-            <h3>Agency delivery</h3>
-            <p>
-              Met DigitalFarmers.be bouwen we software-oplossingen voor tientallen klanten die willen schalen zonder chaos.
-            </p>
+            <h3>Afwerking</h3>
+            <p>Details doen ertoe: workflows, training en delivery voelen premium aan.</p>
           </article>
         </div>
       </section>
 
-      <section class="section split reveal" id="work">
+      <section class="section split reveal">
         <div>
-          <p class="eyebrow">Mijn aanbod</p>
-          <h2>Van strategie tot uitvoering</h2>
+          <p class="eyebrow">System thinker</p>
+          <h2>Geen losse tools — één samenhangend systeem</h2>
           <p>
-            Ik neem geen losse opdrachten aan zonder richting. We starten met helderheid: doel, prioriteiten, KPI’s, en dan bouwen we stap voor stap.
+            Ik werk bij de grootste dealers om workflow en rendement te optimaliseren. We brengen knelpunten in kaart,
+            standaardiseren de flow en bouwen feedback loops die teams zelf blijven verbeteren.
           </p>
+          <p class="lang">EN — From intake to delivery, every step becomes measurable and repeatable.</p>
+          <p class="lang">FR — De l’accueil à la livraison, chaque étape devient mesurable et répétable.</p>
         </div>
-        <div class="pillars">
-          <div class="pillar">
-            <h3>01 — Advisory</h3>
-            <p>Roadmaps, architectuurkeuzes, teamcoaching en kwaliteitsverbetering.</p>
+        <div class="system-stack">
+          <div class="stack-card">
+            <p class="stack-title">Flow mapping</p>
+            <p>We maken zichtbaar wat vertraagt en waarom.</p>
           </div>
-          <div class="pillar">
-            <h3>02 — Training</h3>
-            <p>Hands-on workshops voor operationele teams en leadership.</p>
+          <div class="stack-card">
+            <p class="stack-title">Standards</p>
+            <p>Consistentie = snelheid zonder kwaliteit te verliezen.</p>
           </div>
-          <div class="pillar">
-            <h3>03 — Build</h3>
-            <p>End-to-end software trajecten via DigitalFarmers.be.</p>
+          <div class="stack-card">
+            <p class="stack-title">Feedback loops</p>
+            <p>We borgen verbeteringen zodat het systeem blijft groeien.</p>
           </div>
         </div>
       </section>
 
       <section class="section reveal" id="visuals">
         <div class="section-head">
-          <p class="eyebrow">Menselijke impact</p>
-          <h2>Visueel uitnodigend, professioneel gedreven</h2>
+          <p class="eyebrow">Visual depth</p>
+          <h2>Mens + wagen + technologie</h2>
         </div>
         <div class="visual-grid">
           <article class="visual-card">
@@ -143,38 +141,22 @@
             <p class="visual-text">Heldere communicatie die teams mee krijgt in verandering.</p>
           </article>
           <article class="visual-card">
-            <div class="visual visual-floor"></div>
-            <p class="visual-title">Van werkvloer tot boardroom</p>
-            <p class="visual-text">Ervaring die respect afdwingt bij zowel teams als leiderschap.</p>
+            <div class="visual visual-auto"></div>
+            <p class="visual-title">Automotive expertise</p>
+            <p class="visual-text">Diep begrip van workflow, kwaliteit en klantbeleving.</p>
+          </article>
+          <article class="visual-card">
+            <div class="visual visual-tech"></div>
+            <p class="visual-title">Technologie die werkt</p>
+            <p class="visual-text">Digitale oplossingen die direct voelbaar resultaat geven.</p>
           </article>
         </div>
       </section>
 
-      <section class="section reveal" id="system">
+      <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Systeemdenken</p>
-          <h2>Ik bouw geen losse tools, ik ontwerp een werkend systeem</h2>
-        </div>
-        <div class="system-grid">
-          <article class="card">
-            <h3>Workflow mapping</h3>
-            <p>We visualiseren bottlenecks en koppelen elke stap aan impact op klant, marge en kwaliteit.</p>
-          </article>
-          <article class="card">
-            <h3>Standardisatie</h3>
-            <p>Consistente processen zorgen voor snelheid zonder kwaliteitsverlies, van intake tot oplevering.</p>
-          </article>
-          <article class="card">
-            <h3>Feedback loops</h3>
-            <p>Met meetpunten en duidelijke ownership maak ik verbetering herhaalbaar en schaalbaar.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section reveal" id="proof">
-        <div class="section-head">
-          <p class="eyebrow">Ervaring die vertrouwen creëert</p>
-          <h2>Track record</h2>
+          <p class="eyebrow">Track record</p>
+          <h2>Ervaring die vertrouwen creëert</h2>
         </div>
         <div class="partner-row">
           <span class="partner-label">Partner</span>
@@ -187,7 +169,7 @@
           </article>
           <article>
             <p class="metric">BMW Jorssen Zuid</p>
-            <p>Startte mijn traject op de vloer, later Teamleader Accident Advisor</p>
+            <p>Startte op de vloer, later Teamleader Accident Advisor</p>
           </article>
           <article>
             <p class="metric">Enterprise + Agency</p>
@@ -196,7 +178,7 @@
         </div>
       </section>
 
-      <section class="section contact reveal" id="contact">
+      <section class="section contact reveal">
         <div>
           <p class="eyebrow">Let’s build momentum</p>
           <h2>Klaar om jouw team te versterken?</h2>
@@ -204,25 +186,10 @@
             Stuur me een bericht voor consultancy, training of een softwareproject. Ik denk praktisch, snel en resultaatgericht mee.
           </p>
         </div>
-        <form class="contact-card" onsubmit="event.preventDefault()">
-          <label>
-            Naam
-            <input type="text" placeholder="Jouw naam" />
-          </label>
-          <label>
-            E-mail
-            <input type="email" placeholder="jij@bedrijf.be" />
-          </label>
-          <label>
-            Waarover?
-            <select>
-              <option>Consultancy</option>
-              <option>Training</option>
-              <option>Agency project</option>
-            </select>
-          </label>
-          <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
-        </form>
+        <div class="contact-card">
+          <a class="contact-link" href="contact.html">Ga naar contact →</a>
+          <p class="contact-note">Directe route naar een heldere intake.</p>
+        </div>
       </section>
     </main>
 
