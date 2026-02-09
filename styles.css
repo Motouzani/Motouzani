@@ -1,26 +1,23 @@
 :root {
   --bg: #ffffff;
-  --bg-soft: #f6f8fa;
-  --ink: #0b0d0f;
-  --ink-soft: #5b5f66;
+  --bg-soft: #f7f7f7;
+  --ink: #0b0b0b;
+  --ink-soft: #5c5c5c;
   --accent: #0b5a3c;
   --accent-dark: #08452f;
-  --line: #e5e7eb;
+  --line: #e8e8e8;
   --card: #ffffff;
-  --shadow: none;
-  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 html[data-theme="dark"] {
-  --bg: #0d1117;
-  --bg-soft: #161b22;
-  --ink: #e6edf3;
-  --ink-soft: #9da7b3;
+  --bg: #0b0b0b;
+  --bg-soft: #141414;
+  --ink: #f5f5f5;
+  --ink-soft: #b5b5b5;
   --accent: #2ea043;
   --accent-dark: #238636;
-  --line: #30363d;
-  --card: #0d1117;
-  --shadow: none;
+  --line: #222222;
+  --card: #0b0b0b;
 }
 
 * {
@@ -34,7 +31,7 @@ body {
 }
 
 body {
-  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  font-family: "Sofia Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.6;
@@ -43,7 +40,7 @@ body {
 .nav {
   width: min(1120px, 92%);
   margin: 0 auto;
-  padding: 1.6rem 0;
+  padding: 1.8rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +57,7 @@ body {
 }
 
 .logo-mark {
-  width: 76px;
+  width: 64px;
   height: auto;
   color: var(--accent);
 }
@@ -110,16 +107,15 @@ body {
 .lang-switch {
   display: inline-flex;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 999px;
   overflow: hidden;
 }
 
 .lang-btn {
   background: var(--bg-soft);
   border: none;
-  padding: 0.35rem 0.6rem;
-  font-family: var(--mono);
-  font-size: 0.72rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   cursor: pointer;
 }
@@ -131,8 +127,8 @@ body {
 
 .theme-toggle {
   border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
   background: var(--bg-soft);
   color: var(--ink);
   cursor: pointer;
@@ -141,8 +137,8 @@ body {
 .nav-toggle {
   display: none;
   border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
   background: var(--bg-soft);
 }
 
@@ -174,13 +170,12 @@ body {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--accent-dark);
-  font-family: var(--mono);
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-family: "Sofia Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.1;
   margin-top: 0;
 }
@@ -202,8 +197,7 @@ h1 {
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
-  font-family: var(--mono);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
 }
 
@@ -216,7 +210,7 @@ h1 {
 
 .btn {
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 999px;
   padding: 0.7rem 1.1rem;
   font-weight: 600;
   text-decoration: none;
@@ -255,16 +249,15 @@ h1 {
 
 .hero-badges span {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 999px;
   padding: 0.3rem 0.6rem;
   background: var(--bg-soft);
-  font-family: var(--mono);
   font-size: 0.72rem;
 }
 
 .hero-visual {
-  min-height: 300px;
-  border-radius: 10px;
+  min-height: 280px;
+  border-radius: 16px;
   border: 1px solid var(--line);
   background: var(--bg-soft);
   display: grid;
@@ -274,15 +267,13 @@ h1 {
 }
 
 .mono-mark {
-  font-family: var(--mono);
-  font-size: 3rem;
-  letter-spacing: 0.3rem;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
   color: var(--accent);
   margin-bottom: 0.6rem;
 }
 
 .mono-label {
-  font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -318,7 +309,7 @@ h1 {
 .metrics article,
 .feature-card {
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 1rem;
   background: var(--card);
 }
@@ -331,7 +322,6 @@ h1 {
 }
 
 .metric {
-  font-family: "Space Grotesk", system-ui, sans-serif;
   font-size: 1.25rem;
   margin: 0 0 0.25rem;
 }
@@ -342,12 +332,11 @@ h1 {
   gap: 0.6rem;
   border: 1px solid var(--line);
   background: var(--bg-soft);
-  border-radius: 6px;
+  border-radius: 999px;
   padding: 0.3rem 0.6rem;
   margin-bottom: 1rem;
   color: var(--ink-soft);
   font-weight: 600;
-  font-family: var(--mono);
   font-size: 0.7rem;
 }
 
@@ -372,7 +361,7 @@ h1 {
 
 .profile-card {
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 1.4rem;
   background: var(--card);
 }
@@ -380,11 +369,10 @@ h1 {
 .profile-initials {
   width: 64px;
   height: 64px;
-  border-radius: 10px;
+  border-radius: 16px;
   display: grid;
   place-items: center;
   font-weight: 700;
-  font-family: var(--mono);
   color: var(--accent);
   border: 1px solid var(--line);
   background: var(--bg-soft);
@@ -417,7 +405,7 @@ h1 {
   display: grid;
   gap: 0.9rem;
   background: var(--card);
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid var(--line);
 }
 
@@ -478,7 +466,7 @@ h1 {
     gap: 0;
     background: var(--card);
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     display: none;
   }
