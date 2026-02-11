@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Motouzani</title>
-    <meta name="description" content="Contacteer Motouzani voor consultancy, training of software delivery." />
+    <meta name="description" content="Book a call with Motouzani." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -27,9 +24,7 @@
             <button class="lang-btn" data-lang="fr">FR</button>
             <button class="lang-btn" data-lang="en">EN</button>
           </div>
-          <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
-            <span class="theme-icon">◐</span>
-          </button>
+          <button class="theme-toggle" type="button" aria-label="Schakel dark mode"><span class="theme-icon">◐</span></button>
           <button class="nav-toggle" aria-label="Open menu">☰</button>
         </div>
         <ul class="nav-links">
@@ -42,33 +37,33 @@
       </nav>
       <div class="page-head">
         <p class="eyebrow" data-i18n="contact_eyebrow">CONTACT</p>
-        <h1 data-i18n="contact_title">Laten we samenwerken</h1>
-        <p class="hero-text" data-i18n="contact_intro">Ik reageer snel en praktisch. Kies de route die het beste past.</p>
+        <h1 data-i18n="contact_title">Book a call</h1>
+        <p class="hero-text" data-i18n="contact_intro">Korte intake. Heldere volgende stap.</p>
       </div>
     </header>
 
     <main>
       <section class="section contact">
         <div>
-          <p class="eyebrow" data-i18n="contact_form_eyebrow">DIRECTE LIJNEN</p>
-          <h2 data-i18n="contact_form_title">Plan een kennismaking</h2>
-          <p data-i18n="contact_form_body">Consultancy, training of een softwaretraject — we starten met een korte intake.</p>
+          <p class="eyebrow" data-i18n="contact_form_eyebrow">INTAKE</p>
+          <h2 data-i18n="contact_form_title">Vertel kort wat je nodig hebt</h2>
+          <p data-i18n="contact_form_body">Ik antwoord snel met een concrete volgende stap.</p>
         </div>
         <form class="contact-card" onsubmit="event.preventDefault()">
           <div class="form-row">
             <label>
               <span data-i18n="form_name">Naam</span>
-              <input type="text" placeholder="" />
+              <input type="text" required />
             </label>
             <label>
               <span data-i18n="form_email">E-mail</span>
-              <input type="email" placeholder="" />
+              <input type="email" required />
             </label>
           </div>
           <div class="form-row">
             <label>
               <span data-i18n="form_company">Bedrijf</span>
-              <input type="text" placeholder="" />
+              <input type="text" />
             </label>
             <label>
               <span data-i18n="form_topic">Waarover?</span>
@@ -81,38 +76,17 @@
           </div>
           <label>
             <span data-i18n="form_msg">Message</span>
-            <textarea rows="5" placeholder=""></textarea>
+            <textarea rows="5" required></textarea>
           </label>
-          <button class="btn btn-primary" type="submit" data-i18n="form_submit">Verstuur aanvraag</button>
+          <button class="btn btn-primary" type="submit" data-i18n="form_submit">Send →</button>
           <p class="form-note" data-i18n="form_note">Ik antwoord meestal binnen 24 uur.</p>
         </form>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="contact_channels_eyebrow">CONTACT OPTIES</p>
-          <h2 data-i18n="contact_channels_title">Snelle routes</h2>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3 data-i18n="contact_email_title">E-mail</h3>
-            <p>contact@motouzani.com</p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="contact_whatsapp_title">WhatsApp</h3>
-            <p>+32 000 00 00 00</p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="contact_linkedin_title">LinkedIn</h3>
-            <p>linkedin.com/in/motouzani</p>
-          </article>
-        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-row">
-        <p>© <span id="year"></span> Motouzani — motouzani.com</p>
+        <p>© <span id="year"></span> Motouzani</p>
         <div class="lang-switch" role="group" aria-label="Language switch">
           <button class="lang-btn" data-lang="nl">NL</button>
           <button class="lang-btn" data-lang="fr">FR</button>
