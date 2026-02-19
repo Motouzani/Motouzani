@@ -87,6 +87,16 @@
           </div>
           <div class="ring ring-one"></div>
           <div class="ring ring-two"></div>
+          <svg class="signature-graph" viewBox="0 0 420 320" role="presentation">
+            <path
+              class="signature-path"
+              d="M30 250 C80 210, 110 130, 160 120 C220 105, 250 170, 300 160 C340 150, 360 120, 390 90"
+            />
+            <circle class="signature-node" cx="30" cy="250" r="6" />
+            <circle class="signature-node" cx="160" cy="120" r="6" />
+            <circle class="signature-node" cx="300" cy="160" r="6" />
+            <circle class="signature-node" cx="390" cy="90" r="6" />
+          </svg>
           <div class="voice">
             <span></span>
             <span></span>
@@ -125,7 +135,7 @@
           </div>
           <div class="signature-card">
             <p class="signature-title">Wat je altijd merkt</p>
-            <ul class="signature-list">
+            <ul class="signature-list stagger">
               <li>Een duidelijke north star: waar het team naartoe moet en waarom.</li>
               <li>Meetpunten die teams begrijpen, geen dashboards die alleen managers lezen.</li>
               <li>Een workflow die voelt als flow, met minder wrijving en meer ownership.</li>
@@ -141,7 +151,7 @@
           <p class="eyebrow">Waarom met mij werken</p>
           <h2>Drie werelden, één duidelijke meerwaarde</h2>
         </div>
-        <div class="cards">
+        <div class="cards stagger">
           <article class="card">
             <h3>Consultancy</h3>
             <p>
@@ -196,6 +206,17 @@
             </div>
           </div>
         </div>
+        <div class="about-visuals stagger" aria-hidden="true">
+          <div class="about-visual about-visual-one">
+            <span class="visual-label">Workshop pulse</span>
+          </div>
+          <div class="about-visual about-visual-two">
+            <span class="visual-label">Dealer flow</span>
+          </div>
+          <div class="about-visual about-visual-three">
+            <span class="visual-label">System clarity</span>
+          </div>
+        </div>
         <div class="values-row">
           <article class="value-card">
             <h4>Mens</h4>
@@ -222,17 +243,31 @@
           </p>
           <div class="logo-wall">
             <p class="logo-wall-title">Recente dealermerken (selectie)</p>
-            <div class="logo-grid">
-              <span class="logo-pill">Premium Dealer Group</span>
-              <span class="logo-pill">Luxury Auto Retail</span>
-              <span class="logo-pill">Multi‑Brand Dealer</span>
-              <span class="logo-pill">Regional Auto Group</span>
-              <span class="logo-pill">High‑Volume Service</span>
-              <span class="logo-pill">EV Performance</span>
+            <div class="logo-marquee" aria-hidden="true">
+              <div class="logo-track">
+                <span class="logo-pill">Premium Dealer Group</span>
+                <span class="logo-pill">Luxury Auto Retail</span>
+                <span class="logo-pill">Multi‑Brand Dealer</span>
+                <span class="logo-pill">Regional Auto Group</span>
+                <span class="logo-pill">High‑Volume Service</span>
+                <span class="logo-pill">EV Performance</span>
+                <span class="logo-pill">Fleet Service</span>
+                <span class="logo-pill">Performance Studio</span>
+              </div>
+              <div class="logo-track">
+                <span class="logo-pill">Premium Dealer Group</span>
+                <span class="logo-pill">Luxury Auto Retail</span>
+                <span class="logo-pill">Multi‑Brand Dealer</span>
+                <span class="logo-pill">Regional Auto Group</span>
+                <span class="logo-pill">High‑Volume Service</span>
+                <span class="logo-pill">EV Performance</span>
+                <span class="logo-pill">Fleet Service</span>
+                <span class="logo-pill">Performance Studio</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="pillars">
+        <div class="pillars stagger">
           <div class="pillar">
             <h3>01 — Advisory</h3>
             <p>Roadmaps, architectuurkeuzes, teamcoaching en kwaliteitsverbetering.</p>
@@ -254,7 +289,7 @@
           <h2>Een helder traject in 5 bewegingen</h2>
         </div>
         <div class="method-grid">
-          <ol class="method-steps">
+          <ol class="method-steps stagger">
             <li>
               <strong>Diagnose:</strong> we lezen het systeem zoals het écht werkt, niet zoals het ooit ontworpen is.
             </li>
@@ -289,7 +324,7 @@
           <p class="eyebrow">Menselijke impact</p>
           <h2>Visueel uitnodigend, professioneel gedreven</h2>
         </div>
-        <div class="visual-grid">
+        <div class="visual-grid stagger">
           <article class="visual-card">
             <div class="visual visual-talk"></div>
             <p class="visual-title">Spreken met impact</p>
@@ -313,7 +348,7 @@
           <p class="eyebrow">MO — Modus Operandi</p>
           <h2>Zo werk ik: helder, gedisciplineerd en mensgericht</h2>
         </div>
-        <div class="system-grid">
+        <div class="system-grid stagger">
           <article class="card">
             <h3>1. Diagnose & scherpte</h3>
             <p>We visualiseren bottlenecks en koppelen elke stap aan impact op klant, marge en kwaliteit.</p>
@@ -327,7 +362,7 @@
             <p>Met meetpunten en duidelijke ownership maak ik verbetering herhaalbaar en schaalbaar.</p>
           </article>
         </div>
-        <div class="mo-detail">
+        <div class="mo-detail stagger">
           <div class="mo-card">
             <p class="mo-title">Mijn belofte</p>
             <p>Je krijgt een plan dat teams begrijpen en een flow die zichtbaar beter werkt — binnen weken, niet maanden.</p>
@@ -341,6 +376,15 @@
             <p>Het systeem klopt, maar het blijft menselijk. Dat is de Motouzani manier.</p>
           </div>
         </div>
+        <div class="mo-visual" aria-hidden="true">
+          <div class="mo-ring"></div>
+          <div class="mo-ring mo-ring-alt"></div>
+          <div class="mo-core">
+            <span>Mens</span>
+            <span>Proces</span>
+            <span>Software</span>
+          </div>
+        </div>
       </section>
 
       <section class="section reveal" id="proof">
@@ -352,7 +396,7 @@
           <span class="partner-label">Partner</span>
           <span class="partner-name">BMW CFD Training Center</span>
         </div>
-        <div class="metrics">
+        <div class="metrics stagger">
           <article>
             <p class="metric">20+ jaar</p>
             <p>Automotive ervaring, gestart als carrosserier & special painting (2008)</p>
@@ -366,7 +410,7 @@
             <p>Ik optimaliseer workflows bij grote dealers en bouw oplossingen voor tientallen klanten</p>
           </article>
         </div>
-        <div class="quote-grid">
+        <div class="quote-grid stagger">
           <article class="quote-card">
             <p class="quote-text">“We voelen eindelijk richting én rust tegelijk. Het team beweegt sneller zonder extra druk.”</p>
             <p class="quote-meta">Operationeel manager</p>

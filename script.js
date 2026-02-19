@@ -81,3 +81,10 @@ if (parallaxTargets.length && !prefersReduced) {
     });
   });
 }
+
+const logoMarquee = document.querySelectorAll(".logo-track");
+if (logoMarquee.length && !prefersReduced) {
+  logoMarquee.forEach((track, index) => {
+    track.style.animationDuration = `${16 + index * 4}s`;
+  });
+}
