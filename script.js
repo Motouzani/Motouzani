@@ -52,6 +52,7 @@ const translations = {
     nav_work: "Work",
     nav_contact: "Contact",
 
+    df_badge: "Founding Farmer · DigitalFarmers",
     hero_eyebrow: "AUTOMOTIVE · SOFTWARE · TRAINING",
     hero_title: "Ik bouw systemen die rust brengen op de vloer en snelheid in het resultaat.",
     hero_body: "Automotive software consultant. BMW trainer. Agency founder.",
@@ -132,6 +133,7 @@ const translations = {
     nav_work: "Services",
     nav_contact: "Contact",
 
+    df_badge: "Founding Farmer · DigitalFarmers",
     hero_eyebrow: "AUTOMOBILE · LOGICIEL · FORMATION",
     hero_title: "Je crée des systèmes qui apaisent le terrain et accélèrent les résultats.",
     hero_body: "Consultant auto. Formateur BMW. Founder agency.",
@@ -212,6 +214,7 @@ const translations = {
     nav_work: "Work",
     nav_contact: "Contact",
 
+    df_badge: "Founding Farmer · DigitalFarmers",
     hero_eyebrow: "AUTOMOTIVE · SOFTWARE · TRAINING",
     hero_title: "I build systems that calm the floor and speed up results.",
     hero_body: "Automotive consultant. BMW trainer. Agency founder.",
