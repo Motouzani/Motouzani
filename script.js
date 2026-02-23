@@ -44,6 +44,19 @@ if (navToggle && navLinks) {
   });
 }
 
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+document.querySelectorAll(".reveal, .draw").forEach((el) => revealObserver.observe(el));
+
 const translations = {
   nl: {
     nav_home: "Home",
@@ -73,6 +86,12 @@ const translations = {
     role_3_title: "🚀 Entrepreneur",
     role_3_body: "Oplossingen die bedrijven vooruit brengen.",
 
+    visuals_eyebrow: "VISUAL SIGNALS",
+    visuals_title: "Clarity you can see",
+    visuals_1: "Flow map",
+    visuals_2: "Signal",
+    visuals_3: "Delivery",
+
     track_eyebrow: "TRACK RECORD",
     track_title: "Ervaring die vertrouwen creëert",
     metric_1_title: "20+ jaar",
@@ -91,6 +110,7 @@ const translations = {
     about_eyebrow: "ABOUT",
     about_title: "Vakman → Teamlead → Consultant",
     about_intro: "Carrosserie, BMW, systems. Kort en duidelijk.",
+    about_signal: "Craft → Systems",
     about_p1: "2008 · Carrosserie",
     about_p2: "BMW · Teamlead",
     about_p3: "Consulting · Systems",
@@ -98,6 +118,7 @@ const translations = {
     sys_eyebrow: "SYSTEMS",
     sys_title: "Clarity · Flow · Feedback",
     sys_intro: "Drie woorden. Eén systeem.",
+    sys_signal: "System grid",
     sys_p1: "Clarity = ownership",
     sys_p2: "Flow = snelheid",
     sys_p3: "Feedback = groei",
@@ -105,6 +126,7 @@ const translations = {
     work_eyebrow: "WORK",
     work_title: "Consult · Train · Build",
     work_intro: "Kort, direct, resultaat.",
+    work_signal: "Delivery pipeline",
     work_p1: "Consulting",
     work_p2: "Training",
     work_p3: "Delivery",
@@ -154,6 +176,12 @@ const translations = {
     role_3_title: "🚀 Entrepreneur",
     role_3_body: "Des solutions qui font avancer l’entreprise.",
 
+    visuals_eyebrow: "VISUAL SIGNALS",
+    visuals_title: "Clarté visible",
+    visuals_1: "Flow map",
+    visuals_2: "Signal",
+    visuals_3: "Delivery",
+
     track_eyebrow: "RÉFÉRENCES",
     track_title: "Expérience qui crée la confiance",
     metric_1_title: "20+ ans",
@@ -172,6 +200,7 @@ const translations = {
     about_eyebrow: "À PROPOS",
     about_title: "Artisan → Teamlead → Consultant",
     about_intro: "Carrosserie, BMW, systems. Simple.",
+    about_signal: "Craft → Systems",
     about_p1: "2008 · Carrosserie",
     about_p2: "BMW · Teamlead",
     about_p3: "Consulting · Systems",
@@ -179,6 +208,7 @@ const translations = {
     sys_eyebrow: "SYSTÈMES",
     sys_title: "Clarity · Flow · Feedback",
     sys_intro: "Trois mots. Un système.",
+    sys_signal: "System grid",
     sys_p1: "Clarity = ownership",
     sys_p2: "Flow = vitesse",
     sys_p3: "Feedback = croissance",
@@ -186,6 +216,7 @@ const translations = {
     work_eyebrow: "WORK",
     work_title: "Consult · Train · Build",
     work_intro: "Court, direct, résultat.",
+    work_signal: "Delivery pipeline",
     work_p1: "Consulting",
     work_p2: "Training",
     work_p3: "Delivery",
@@ -235,6 +266,12 @@ const translations = {
     role_3_title: "🚀 Entrepreneur",
     role_3_body: "Solutions that push businesses forward.",
 
+    visuals_eyebrow: "VISUAL SIGNALS",
+    visuals_title: "Clarity you can see",
+    visuals_1: "Flow map",
+    visuals_2: "Signal",
+    visuals_3: "Delivery",
+
     track_eyebrow: "TRACK RECORD",
     track_title: "Experience that builds trust",
     metric_1_title: "20+ years",
@@ -253,6 +290,7 @@ const translations = {
     about_eyebrow: "ABOUT",
     about_title: "Craft → Teamlead → Consultant",
     about_intro: "Bodywork, BMW, systems. Simple.",
+    about_signal: "Craft → Systems",
     about_p1: "2008 · Bodywork",
     about_p2: "BMW · Teamlead",
     about_p3: "Consulting · Systems",
@@ -260,6 +298,7 @@ const translations = {
     sys_eyebrow: "SYSTEMS",
     sys_title: "Clarity · Flow · Feedback",
     sys_intro: "Three words. One system.",
+    sys_signal: "System grid",
     sys_p1: "Clarity = ownership",
     sys_p2: "Flow = speed",
     sys_p3: "Feedback = growth",
@@ -267,6 +306,7 @@ const translations = {
     work_eyebrow: "WORK",
     work_title: "Consult · Train · Build",
     work_intro: "Short, direct, results.",
+    work_signal: "Delivery pipeline",
     work_p1: "Consulting",
     work_p2: "Training",
     work_p3: "Delivery",
