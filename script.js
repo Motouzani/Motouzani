@@ -3,31 +3,49 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const themeToggle = document.querySelector(".theme-toggle");
 const rootEl = document.documentElement;
-const storedTheme = localStorage.getItem("theme");
-const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+const mediaQuery = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+let themeMode = localStorage.getItem("theme") || "system";
 
-if (storedTheme) {
-  rootEl.setAttribute("data-theme", storedTheme);
-} else if (prefersDark) {
-  rootEl.setAttribute("data-theme", "dark");
-}
+const applyTheme = (mode) => {
+  themeMode = mode;
+  if (mode === "dark") {
+    rootEl.setAttribute("data-theme", "dark");
+  } else if (mode === "light") {
+    rootEl.removeAttribute("data-theme");
+  } else {
+    if (mediaQuery && mediaQuery.matches) {
+      rootEl.setAttribute("data-theme", "dark");
+    } else {
+      rootEl.removeAttribute("data-theme");
+    }
+  }
+  updateThemeIcon();
+};
 
 const updateThemeIcon = () => {
   const icon = document.querySelector(".theme-icon");
   if (!icon) return;
-  const current = rootEl.getAttribute("data-theme");
-  icon.textContent = current === "dark" ? "☾" : "◐";
+  icon.textContent = themeMode === "system" ? "◒" : themeMode === "dark" ? "☾" : "☼";
+  if (themeToggle) themeToggle.title = `Theme: ${themeMode}`;
 };
 
-updateThemeIcon();
+applyTheme(themeMode);
+
+if (mediaQuery) {
+  mediaQuery.addEventListener("change", () => {
+    if (themeMode === "system") applyTheme("system");
+  });
+}
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const isDark = rootEl.getAttribute("data-theme") === "dark";
-    const next = isDark ? "light" : "dark";
-    rootEl.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
-    updateThemeIcon();
+    const next = themeMode === "system" ? "dark" : themeMode === "dark" ? "light" : "system";
+    if (next === "system") {
+      localStorage.removeItem("theme");
+    } else {
+      localStorage.setItem("theme", next);
+    }
+    applyTheme(next);
   });
 }
 
@@ -69,10 +87,12 @@ const translations = {
     hero_eyebrow: "AUTOMOTIVE · SOFTWARE · TRAINING",
     hero_title: "Ik bouw systemen die rust brengen op de vloer en snelheid in het resultaat.",
     hero_body: "Automotive software consultant. BMW trainer. Agency founder.",
+    micro_prefix: "Consultant at",
+    micro_middle: "· Founding Farmer at",
     hero_b1: "⚡ Tech‑savvy",
     hero_b2: "🧠 Systems",
     hero_b3: "🤝 Leadership",
-    cta_primary: "Plan een call",
+    cta_primary: "⚡ Book je call",
     cta_secondary: "Bekijk mijn aanpak",
     mono_label: "SYSTEM BLUEPRINT",
     mono_body: "Clarity · Flow · Feedback",
@@ -103,9 +123,9 @@ const translations = {
 
     cta_eyebrow: "LET’S BUILD MOMENTUM",
     cta_title: "Klaar om jouw team te versterken?",
-    cta_body: "Korte intake. Duidelijke next step.",
-    cta_link: "Book a call →",
-    cta_note: "Eigen formulier, geen ruis.",
+    cta_body: "20 min intake. Duidelijke next step.",
+    cta_link: "Book je call →",
+    cta_note: "Eigen formulier · direct resultaat.",
 
     about_eyebrow: "ABOUT",
     about_title: "Vakman → Teamlead → Consultant",
@@ -132,8 +152,8 @@ const translations = {
     work_p3: "Delivery",
 
     contact_eyebrow: "CONTACT",
-    contact_title: "Book a call",
-    contact_intro: "Korte intake. Heldere volgende stap.",
+    contact_title: "Book your call",
+    contact_intro: "20 min intake. Heldere volgende stap.",
     contact_form_eyebrow: "INTAKE",
     contact_form_title: "Vertel kort wat je nodig hebt",
     contact_form_body: "Ik antwoord snel met een concrete volgende stap.",
@@ -159,10 +179,12 @@ const translations = {
     hero_eyebrow: "AUTOMOBILE · LOGICIEL · FORMATION",
     hero_title: "Je crée des systèmes qui apaisent le terrain et accélèrent les résultats.",
     hero_body: "Consultant auto. Formateur BMW. Founder agency.",
+    micro_prefix: "Consultant chez",
+    micro_middle: "· Founding Farmer chez",
     hero_b1: "⚡ Tech‑savvy",
     hero_b2: "🧠 Systems",
     hero_b3: "🤝 Leadership",
-    cta_primary: "Planifier un call",
+    cta_primary: "⚡ Réserver un call",
     cta_secondary: "Voir mon approche",
     mono_label: "SYSTEM BLUEPRINT",
     mono_body: "Clarity · Flow · Feedback",
@@ -193,9 +215,9 @@ const translations = {
 
     cta_eyebrow: "LET’S BUILD MOMENTUM",
     cta_title: "Prêt à renforcer votre équipe ?",
-    cta_body: "Intake courte. Étape claire.",
-    cta_link: "Book a call →",
-    cta_note: "Formulaire propre, sans bruit.",
+    cta_body: "Intake 20 min. Étape claire.",
+    cta_link: "Réserver un call →",
+    cta_note: "Formulaire propre · impact direct.",
 
     about_eyebrow: "À PROPOS",
     about_title: "Artisan → Teamlead → Consultant",
@@ -222,8 +244,8 @@ const translations = {
     work_p3: "Delivery",
 
     contact_eyebrow: "CONTACT",
-    contact_title: "Book a call",
-    contact_intro: "Intake courte. Étape claire.",
+    contact_title: "Book your call",
+    contact_intro: "Intake 20 min. Étape claire.",
     contact_form_eyebrow: "INTAKE",
     contact_form_title: "Dites l’essentiel",
     contact_form_body: "Je réponds vite avec un next step.",
@@ -249,10 +271,12 @@ const translations = {
     hero_eyebrow: "AUTOMOTIVE · SOFTWARE · TRAINING",
     hero_title: "I build systems that calm the floor and speed up results.",
     hero_body: "Automotive consultant. BMW trainer. Agency founder.",
+    micro_prefix: "Consultant at",
+    micro_middle: "· Founding Farmer at",
     hero_b1: "⚡ Tech‑savvy",
     hero_b2: "🧠 Systems",
     hero_b3: "🤝 Leadership",
-    cta_primary: "Book a call",
+    cta_primary: "⚡ Book your call",
     cta_secondary: "See my approach",
     mono_label: "SYSTEM BLUEPRINT",
     mono_body: "Clarity · Flow · Feedback",
@@ -283,9 +307,9 @@ const translations = {
 
     cta_eyebrow: "LET’S BUILD MOMENTUM",
     cta_title: "Ready to strengthen your team?",
-    cta_body: "Short intake. Clear next step.",
-    cta_link: "Book a call →",
-    cta_note: "Own form, zero noise.",
+    cta_body: "20 min intake. Clear next step.",
+    cta_link: "Book your call →",
+    cta_note: "Own form · direct outcome.",
 
     about_eyebrow: "ABOUT",
     about_title: "Craft → Teamlead → Consultant",
@@ -312,8 +336,8 @@ const translations = {
     work_p3: "Delivery",
 
     contact_eyebrow: "CONTACT",
-    contact_title: "Book a call",
-    contact_intro: "Short intake. Clear next step.",
+    contact_title: "Book your call",
+    contact_intro: "20 min intake. Clear next step.",
     contact_form_eyebrow: "INTAKE",
     contact_form_title: "Tell me what you need",
     contact_form_body: "I reply fast with a concrete next step.",
