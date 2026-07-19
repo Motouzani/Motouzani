@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -79,6 +81,46 @@ if (parallaxTargets.length && !prefersReduced) {
     parallaxTargets.forEach((el) => {
       el.style.transform = "translate(0px, 0px)";
     });
+  });
+}
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const showStatus = (message, isOk) => {
+      formStatus.textContent = message;
+      formStatus.hidden = false;
+      formStatus.classList.toggle("ok", isOk);
+      formStatus.classList.toggle("err", !isOk);
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Versturen…";
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" },
+      });
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && data.ok) {
+        showStatus("Bedankt! Je aanvraag is verstuurd. Je hoort snel van me.", true);
+        contactForm.reset();
+      } else {
+        showStatus(data.error || "Versturen mislukte. Mail me gerust rechtstreeks op mo@digitalfarmers.be.", false);
+      }
+    } catch (error) {
+      showStatus("Versturen mislukte. Mail me gerust rechtstreeks op mo@digitalfarmers.be.", false);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Verstuur aanvraag";
+    }
   });
 }
 
