@@ -50,7 +50,7 @@ $email = trim((string) ($_POST['email'] ?? ''));
 $topic = trim((string) ($_POST['topic'] ?? 'Algemeen'));
 $message = trim((string) ($_POST['message'] ?? ''));
 
-$allowedTopics = ['Consultancy', 'Training', 'Digitaal project', 'Algemeen'];
+$allowedTopics = ['Consultancy', 'Training', 'Digitaal project', 'Digital project', 'Algemeen'];
 if (!in_array($topic, $allowedTopics, true)) {
     $topic = 'Algemeen';
 }

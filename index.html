@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mo Touzani | Systeembouwer in automotive &amp; digital</title>
+    <title>Mo Touzani | Ik bouw systemen</title>
     <meta
       name="description"
       content="Mo Touzani bouwt systemen: consultant bij Carya, de marktleider in DMS voor automotive, en founder van Digital Farmers. Van dealervloer tot software die zichzelf draait."
@@ -14,17 +14,17 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://motouzani.com/" />
     <meta property="og:site_name" content="motouzani.com" />
-    <meta property="og:title" content="Mo Touzani | Systeembouwer" />
+    <meta property="og:title" content="Mo Touzani | Ik bouw systemen" />
     <meta
       property="og:description"
-      content="Consultant bij Carya, marktleider in DMS voor automotive. Founder van Digital Farmers. Ik bouw systemen die teams vlotter laten presteren."
+      content="Consultant bij Carya, marktleider in DMS voor automotive. Founder van Digital Farmers. Eén levend systeem, van vloer tot code."
     />
     <meta property="og:image" content="https://motouzani.com/assets/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="nl_BE" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mo Touzani | Systeembouwer" />
+    <meta name="twitter:title" content="Mo Touzani | Ik bouw systemen" />
     <meta
       name="twitter:description"
       content="Consultant bij Carya, marktleider in DMS voor automotive. Founder van Digital Farmers."
@@ -34,10 +34,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;600;800&family=Martian+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/chapters.css" />
 
     <script type="application/ld+json">
     {
@@ -84,521 +85,358 @@
     }
     </script>
   </head>
-  <body>
-    <div class="grain"></div>
-    <header class="hero" id="home">
-      <nav class="nav">
-        <a class="logo" href="#home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          motouzani.com
-        </a>
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Schakel dark mode">
-            <span class="theme-icon">◐</span>
-          </button>
-          <button class="nav-toggle" aria-label="Open menu">☰</button>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#signature">Signatuur</a></li>
-          <li><a href="#about">Over mij</a></li>
-          <li><a href="#work">Wat ik doe</a></li>
-          <li><a href="#systemen">Systemen</a></li>
-          <li><a href="#method">Methode</a></li>
-          <li><a href="#mo">MO</a></li>
-          <li><a href="#proof">Resultaten</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <body data-chapter="hero">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
 
-      <div class="hero-grid reveal">
-        <div class="hero-content">
-          <p class="eyebrow">Carya Consultant • Digital Farmers Founder • Automotive</p>
-          <h1>Ik bouw <span>systemen</span>. Voor dealers, voor teams, voor <span>bedrijven die willen schalen</span>.</h1>
-          <p class="hero-text">
-            Ik ben Mo Touzani. Overdag consultant bij <strong>Carya</strong>, de marktleider in DMS-systemen voor
-            automotive, waar ik bij de grootste dealergroepen workflow en rendement scherpstel. Daarnaast founder van
-            <strong>Digital Farmers</strong>, de agency waarmee ik websites, platformen en automatisering bouw.
-          </p>
-          <p class="hero-text hero-text-strong">
-            Twee werelden, één signatuur: ik lees het volledige systeem, van de vloer tot de software, en bouw het tot
-            het klopt. Er is maar één Motouzani.
-          </p>
-          <div class="cta-row">
-            <a href="#contact" class="btn btn-primary">Plan een kennismaking</a>
-            <a href="#systemen" class="btn btn-ghost">Bekijk wat ik bouwde</a>
-          </div>
-          <div class="hero-badges">
-            <span>Carya, marktleider in DMS</span>
-            <span>BMW CFD Training Center</span>
-            <span>Founder Digital Farmers</span>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <p class="stat-number">20+</p>
-              <p class="stat-label">Jaar automotive ervaring</p>
-            </div>
-            <div>
-              <p class="stat-number">2</p>
-              <p class="stat-label">Werelden die samenkomen</p>
-            </div>
-            <div>
-              <p class="stat-number">1</p>
-              <p class="stat-label">Signatuur: Motouzani</p>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orb-wrap orb-one parallax" data-speed="3">
-            <div class="orb-core"></div>
-          </div>
-          <div class="orb-wrap orb-two parallax" data-speed="5">
-            <div class="orb-core"></div>
-          </div>
-          <div class="ring ring-one"></div>
-          <div class="ring ring-two"></div>
-          <svg class="signature-graph" viewBox="0 0 420 320" role="presentation">
-            <path
-              class="signature-path"
-              d="M30 250 C80 210, 110 130, 160 120 C220 105, 250 170, 300 160 C340 150, 360 120, 390 90"
-            />
-            <circle class="signature-node" cx="30" cy="250" r="6" />
-            <circle class="signature-node" cx="160" cy="120" r="6" />
-            <circle class="signature-node" cx="300" cy="160" r="6" />
-            <circle class="signature-node" cx="390" cy="90" r="6" />
-          </svg>
-          <div class="voice">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="signal">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="speaker-card">
-            <p class="speaker-title">Van vloer tot software</p>
-            <p class="speaker-text">Systemen die je voelt in snelheid, rust en kwaliteit.</p>
-          </div>
-          <div class="signature-chip">Only 1 Motouzani</div>
-        </div>
+    <div class="boot" id="boot" aria-hidden="true">
+      <div class="boot-lines">
+        <p class="boot-line">MOTOUZANI · SYSTEEM LADEN</p>
+        <p class="boot-line">vloer.ervaring <span class="boot-ok">OK</span></p>
+        <p class="boot-line">dms.expertise <span class="boot-ok">OK</span></p>
+        <p class="boot-line">digital.farmers <span class="boot-ok">OK</span></p>
+        <p class="boot-line">only1motouzani <span class="boot-ok">TRUE</span></p>
+      </div>
+    </div>
+
+    <header class="site-nav" id="top">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">motouzani<span class="logo-dot">.com</span></span>
+      </a>
+      <div class="nav-right">
+        <button class="lang-toggle" type="button" aria-label="Switch language">
+          <span data-lang-opt="nl" class="lang-opt active">NL</span>
+          <span class="lang-sep">/</span>
+          <span data-lang-opt="en" class="lang-opt">EN</span>
+        </button>
+        <a class="nav-cta" href="#contact" data-i18n="nav.cta">Praat met mij</a>
       </div>
     </header>
 
     <main>
-      <section class="section signature reveal" id="signature">
-        <div class="signature-grid">
-          <div>
-            <p class="eyebrow">Signatuur</p>
-            <h2>Het Motouzani-effect</h2>
-            <p>
-              Geen losse optimalisaties. Geen powerpoint-consultancy. Wel een ontwerp van mens, proces en software
-              dat als geheel werkt. Ik breng het gedrag op de vloer, de logica in de systemen en de richting van het
-              leiderschap samen tot één ritme dat iedereen voelt.
-            </p>
-            <p>
-              Mijn ervaring begon letterlijk met mijn handen in het werk: carrosserie en special painting.
-              Vandaag bouw ik strategie en software. Dat maakt mijn advies scherp, praktisch en geloofwaardig.
-            </p>
-          </div>
-          <div class="signature-card">
-            <p class="signature-title">Wat je altijd merkt</p>
-            <ul class="signature-list stagger">
-              <li>Een duidelijke north star: waar het team naartoe moet en waarom.</li>
-              <li>Meetpunten die teams begrijpen, geen dashboards die alleen managers lezen.</li>
-              <li>Een workflow die voelt als flow, met minder wrijving en meer ownership.</li>
-              <li>Communicatie die spanning wegneemt en energie geeft.</li>
-            </ul>
-            <div class="stamp">m</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="about">
-        <div class="section-head">
-          <p class="eyebrow">Twee werelden, één bouwer</p>
-          <h2>Waarom Carya en Digital Farmers samenkomen</h2>
-        </div>
-        <div class="cards stagger">
-          <article class="card">
-            <h3>Consultant bij Carya</h3>
-            <p>
-              Carya is de marktleider in DMS-systemen voor de automotive sector. Als consultant sta ik bij de grootste
-              dealergroepen om workflow en rendement te optimaliseren. Mijn focus: meetbare flow, sneller en
-              consistenter, zonder kwaliteitsverlies.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Training binnen BMW</h3>
-            <p>
-              Ik geef training in BMW HQ Belux en help teams met consistente standaarden, betere samenwerking en hogere
-              kwaliteit. Zo maak ik het gedrag achter de processen net zo sterk als het proces zelf.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Founder Digital Farmers</h3>
-            <p>
-              Met <a class="inline-link" href="https://digitalfarmers.be" rel="noopener">Digital Farmers</a> bouwen we
-              websites, platformen en automatisering voor bedrijven die willen schalen zonder chaos. Ik ontwerp de
-              visie, mijn team levert de uitvoering.
-            </p>
-          </article>
-        </div>
-        <div class="about-grid">
-          <div class="about-story">
-            <h3>Van vloer tot strategie</h3>
-            <p>
-              Mijn verhaal begon in de werkplaats: carrosserie en special painting. Daar leerde ik wat kwaliteit echt
-              betekent en hoe een team presteert wanneer processen kloppen. Later groeide ik door tot Teamleader
-              Accident Advisor, en vandaag ontwerp ik systemen die flow creëren in grote dealers en digitale bedrijven.
-            </p>
-            <p>
-              Wat mij anders maakt: ik begrijp elk niveau. De werkvloer, de training, het DMS en de software errond.
-              Dat geeft me de scherpte om te zien waar het knelt en de creativiteit om het echt op te lossen.
-            </p>
-          </div>
-          <div class="about-timeline">
-            <div class="timeline-item">
-              <p class="timeline-year">2008</p>
-              <p>Start in carrosserie &amp; special painting.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">BMW Jorssen Zuid</p>
-              <p>Teamleader Accident Advisor, leren leiden vanuit de praktijk.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">BMW HQ Belux</p>
-              <p>Training en kwaliteitsverbetering met focus op consistente standaarden.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">Carya</p>
-              <p>Consultant bij de marktleider in DMS, actief bij de grootste dealergroepen.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">Digital Farmers</p>
-              <p>Eigen agency: websites, platformen en automatisering die zichzelf draaien.</p>
-            </div>
-          </div>
-        </div>
-        <div class="values-row">
-          <article class="value-card">
-            <h4>Mens</h4>
-            <p>Ik ontwerp ritme, gedrag en ownership voordat ik processen optimaliseer.</p>
-          </article>
-          <article class="value-card">
-            <h4>Proces</h4>
-            <p>De flow moet sneller zijn, maar nooit ten koste van kwaliteit.</p>
-          </article>
-          <article class="value-card">
-            <h4>Software</h4>
-            <p>Technologie is pas krachtig als ze teams ondersteunt in hun dag.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split reveal" id="work">
-        <div>
-          <p class="eyebrow">Mijn aanbod</p>
-          <h2>Van strategie tot uitvoering</h2>
-          <p>
-            Ik neem geen losse opdrachten aan zonder richting. We starten met helderheid: doel, prioriteiten, KPI's,
-            rollen en gedrag. Daarna bouwen we stap voor stap, zodat het team meekan en het resultaat blijft.
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow mono" data-i18n="hero.eyebrow">Carya consultant · Digital Farmers founder</p>
+          <h1 class="hero-title">
+            <span class="hero-line" data-i18n="hero.t1">Ik bouw</span>
+            <span class="hero-line hero-accent" data-i18n="hero.t2">systemen.</span>
+          </h1>
+          <svg class="hero-signature" viewBox="0 0 640 120" aria-hidden="true">
+            <path
+              id="sig-path"
+              d="M20 95 C90 80, 120 30, 190 32 C260 34, 260 92, 330 88 C400 84, 410 30, 480 34 C540 38, 570 60, 620 40"
+            />
+          </svg>
+          <p class="hero-sub" data-i18n="hero.sub">
+            Overdag scherp ik workflows aan bij de grootste dealergroepen, als consultant bij Carya,
+            de marktleider in DMS voor automotive. Daarnaast bouw ik met Digital Farmers software
+            die zichzelf draait. Twee werelden, één signatuur.
           </p>
-          <div class="logo-wall">
-            <p class="logo-wall-title">Waar ik dagelijks werk (selectie)</p>
-            <div class="logo-marquee" aria-hidden="true">
-              <div class="logo-track">
-                <span class="logo-pill">Premium Dealer Group</span>
-                <span class="logo-pill">Luxury Auto Retail</span>
-                <span class="logo-pill">Multi-Brand Dealer</span>
-                <span class="logo-pill">Regional Auto Group</span>
-                <span class="logo-pill">High-Volume Service</span>
-                <span class="logo-pill">EV Performance</span>
-                <span class="logo-pill">Fleet Service</span>
-                <span class="logo-pill">Performance Studio</span>
-              </div>
-              <div class="logo-track">
-                <span class="logo-pill">Premium Dealer Group</span>
-                <span class="logo-pill">Luxury Auto Retail</span>
-                <span class="logo-pill">Multi-Brand Dealer</span>
-                <span class="logo-pill">Regional Auto Group</span>
-                <span class="logo-pill">High-Volume Service</span>
-                <span class="logo-pill">EV Performance</span>
-                <span class="logo-pill">Fleet Service</span>
-                <span class="logo-pill">Performance Studio</span>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#ch-1" data-i18n="hero.cta1">Start de reis</a>
+            <a class="btn btn-line" href="#farm" data-i18n="hero.cta2">Bekijk wat draait</a>
           </div>
         </div>
-        <div class="pillars stagger">
-          <div class="pillar">
-            <h3>01 · Advisory</h3>
-            <p>Roadmaps, DMS- en architectuurkeuzes, teamcoaching en kwaliteitsverbetering.</p>
+        <div class="scroll-cue" aria-hidden="true">
+          <span class="scroll-cue-line"></span>
+          <span class="mono scroll-cue-text" data-i18n="hero.scroll">scroll om het systeem te lezen</span>
+        </div>
+      </section>
+
+      <!-- ============ CHAPTER 01 · DE VLOER ============ -->
+      <section class="chapter" id="ch-1" data-mode="spray">
+        <div class="chapter-sticky">
+          <div class="chapter-head">
+            <span class="mono chapter-num">01</span>
+            <span class="chapter-rule"></span>
+            <span class="mono chapter-label" data-i18n="ch1.label">de vloer · 2008</span>
           </div>
-          <div class="pillar">
-            <h3>02 · Training</h3>
-            <p>Hands-on workshops voor operationele teams en leadership.</p>
+          <h2 class="chapter-title" data-i18n="ch1.title">Ik leerde kwaliteit met mijn handen.</h2>
+          <p class="chapter-text" data-i18n="ch1.text">
+            Carrosserie en special painting. Daar zie je meteen wat klopt en wat niet: een laklaag
+            liegt nooit. Ik groeide door tot Teamleader Accident Advisor bij BMW Jorssen Zuid en
+            leerde leiden vanuit de praktijk, niet vanuit een vergaderzaal.
+          </p>
+          <ul class="chapter-points">
+            <li class="mono" data-i18n="ch1.p1">carrosserie &amp; special painting</li>
+            <li class="mono" data-i18n="ch1.p2">teamleader accident advisor</li>
+            <li class="mono" data-i18n="ch1.p3">training in BMW HQ Belux</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ CHAPTER 02 · HET DMS ============ -->
+      <section class="chapter" id="ch-2" data-mode="flow">
+        <div class="chapter-sticky">
+          <div class="chapter-head">
+            <span class="mono chapter-num">02</span>
+            <span class="chapter-rule"></span>
+            <span class="mono chapter-label" data-i18n="ch2.label">het systeem · Carya</span>
           </div>
-          <div class="pillar">
-            <h3>03 · Build</h3>
-            <p>End-to-end digitale trajecten via Digital Farmers: site, platform, automatisering.</p>
+          <h2 class="chapter-title" data-i18n="ch2.title">Ik leerde hoe een dealer ademt in data.</h2>
+          <p class="chapter-text" data-i18n="ch2.text">
+            Vandaag ben ik consultant bij Carya, de marktleider in DMS voor automotive. Ik sta bij
+            de grootste dealergroepen en lees hun volledige flow: van intake tot facturatie. Waar
+            het knelt, maak ik het meetbaar. Waar het klopt, maak ik het sneller.
+          </p>
+          <div class="flow-band" aria-hidden="true">
+            <span class="flow-step mono">intake</span>
+            <span class="flow-arrow"></span>
+            <span class="flow-step mono">werkvloer</span>
+            <span class="flow-arrow"></span>
+            <span class="flow-step mono">kwaliteit</span>
+            <span class="flow-arrow"></span>
+            <span class="flow-step mono">delivery</span>
           </div>
         </div>
       </section>
 
-      <section class="section reveal" id="systemen">
+      <!-- ============ CHAPTER 03 · DE CODE ============ -->
+      <section class="chapter" id="ch-3" data-mode="grid">
+        <div class="chapter-sticky">
+          <div class="chapter-head">
+            <span class="mono chapter-num">03</span>
+            <span class="chapter-rule"></span>
+            <span class="mono chapter-label" data-i18n="ch3.label">de code · Digital Farmers</span>
+          </div>
+          <h2 class="chapter-title" data-i18n="ch3.title">Toen bouwde ik mijn eigen technologie.</h2>
+          <p class="chapter-text" data-i18n="ch3.text">
+            Digital Farmers is mijn agency. Wij bouwen websites, platformen en automatisering voor
+            bedrijven die willen schalen zonder chaos. Eigen CMS, eigen tooling, eigen AI. Ik
+            ontwerp de visie, mijn team en mijn systemen leveren de uitvoering.
+          </p>
+          <ul class="chapter-points">
+            <li class="mono" data-i18n="ch3.p1">multi-tenant CMS &amp; platformen</li>
+            <li class="mono" data-i18n="ch3.p2">automatisering die zichzelf draait</li>
+            <li class="mono" data-i18n="ch3.p3">beveiligd tot op audit-niveau</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ DE FARM · PROJECTEN ============ -->
+      <section class="farm" id="farm">
         <div class="section-head">
-          <p class="eyebrow">Bewijs, geen beloftes</p>
-          <h2>Systemen die vandaag draaien</h2>
-          <p class="section-intro">
-            Dit is geen moodboard. Elk van deze projecten is gebouwd, gelanceerd en wordt beheerd door Digital Farmers.
-            Verschillende sectoren, telkens hetzelfde principe: een systeem dat klopt en zichzelf draagt.
+          <span class="mono section-label" data-i18n="farm.label">04 · de farm</span>
+          <h2 class="section-title" data-i18n="farm.title">Systemen die vandaag draaien.</h2>
+          <p class="section-sub" data-i18n="farm.sub">
+            Geen moodboard. Elk van deze projecten is gebouwd, gelanceerd en wordt beheerd door
+            Digital Farmers. Verschillende sectoren, telkens hetzelfde principe: een systeem dat
+            klopt en zichzelf draagt.
           </p>
         </div>
-        <div class="project-grid stagger">
-          <article class="project-card">
-            <div class="project-visual project-visual-wh"></div>
-            <div class="project-body">
-              <p class="project-sector">Interieur &amp; maatwerk</p>
-              <h3>Wooden Heart</h3>
-              <p>Premium merksite met projectportfolio, moodboards en een volledig eigen platform achter de schermen.</p>
-              <a class="project-link" href="https://woodenheart.be" rel="noopener">woodenheart.be</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-visual project-visual-shifa"></div>
-            <div class="project-body">
-              <p class="project-sector">Zorg</p>
-              <h3>Shifa Care</h3>
-              <p>Zorgplatform met eigen beheeromgeving: de klant bewerkt content zelf, het systeem doet de rest.</p>
-              <a class="project-link" href="https://shifacare.be" rel="noopener">shifacare.be</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-visual project-visual-toren"></div>
-            <div class="project-body">
-              <p class="project-sector">Events &amp; horeca</p>
-              <h3>Torenhof Events</h3>
-              <p>Volledige technische overname en modernisering van een bestaande eventlocatie-site, zonder downtime.</p>
-              <a class="project-link" href="https://torenhofevents.be" rel="noopener">torenhofevents.be</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-visual project-visual-choco"></div>
-            <div class="project-body">
-              <p class="project-sector">Retail &amp; food</p>
-              <h3>Chocotale</h3>
-              <p>Meertalige merksite voor artisanale chocolade, gebouwd om te verkopen en te vertellen tegelijk.</p>
-              <a class="project-link" href="https://chocotale.be" rel="noopener">chocotale.be</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-visual project-visual-insure"></div>
-            <div class="project-body">
-              <p class="project-sector">Verzekeringen</p>
-              <h3>InsureYou</h3>
-              <p>Leadgeneratie met beveiligde formulieren, tweestapsverificatie en wekelijkse rapportering.</p>
-              <a class="project-link" href="https://insureyou.be" rel="noopener">insureyou.be</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-visual project-visual-tiny"></div>
-            <div class="project-body">
-              <p class="project-sector">Eigen producten</p>
-              <h3>Tiny-platformen</h3>
-              <p>Eigen software: multi-tenant CMS, kassasysteem, AI-assistenten en zorgtools. Gebouwd als één ecosysteem.</p>
-              <a class="project-link" href="https://tinycare.eu" rel="noopener">tinycare.eu</a>
-            </div>
-          </article>
+        <div class="farm-grid">
+          <a class="plot" href="https://woodenheart.be" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s1">interieur &amp; maatwerk</span>
+            <span class="plot-name">Wooden Heart</span>
+            <span class="plot-desc" data-i18n="farm.d1">Premium merksite met moodboards en een volledig eigen platform.</span>
+            <span class="mono plot-url">woodenheart.be</span>
+          </a>
+          <a class="plot" href="https://shifacare.be" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s2">zorg</span>
+            <span class="plot-name">Shifa Care</span>
+            <span class="plot-desc" data-i18n="farm.d2">Zorgplatform met eigen beheeromgeving: de klant bewerkt alles zelf.</span>
+            <span class="mono plot-url">shifacare.be</span>
+          </a>
+          <a class="plot" href="https://torenhofevents.be" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s3">events &amp; horeca</span>
+            <span class="plot-name">Torenhof Events</span>
+            <span class="plot-desc" data-i18n="farm.d3">Volledige technische overname en modernisering, zonder downtime.</span>
+            <span class="mono plot-url">torenhofevents.be</span>
+          </a>
+          <a class="plot" href="https://chocotale.be" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s4">retail &amp; food</span>
+            <span class="plot-name">Chocotale</span>
+            <span class="plot-desc" data-i18n="farm.d4">Meertalige merksite voor artisanale chocolade, verkopen en vertellen tegelijk.</span>
+            <span class="mono plot-url">chocotale.be</span>
+          </a>
+          <a class="plot" href="https://insureyou.be" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s5">verzekeringen</span>
+            <span class="plot-name">InsureYou</span>
+            <span class="plot-desc" data-i18n="farm.d5">Leadgeneratie met beveiligde formulieren en wekelijkse rapportering.</span>
+            <span class="mono plot-url">insureyou.be</span>
+          </a>
+          <a class="plot" href="https://tinycare.eu" rel="noopener">
+            <span class="plot-pulse" aria-hidden="true"></span>
+            <span class="mono plot-status" data-i18n="farm.live">LIVE</span>
+            <span class="mono plot-sector" data-i18n="farm.s6">eigen producten</span>
+            <span class="plot-name">Tiny-platformen</span>
+            <span class="plot-desc" data-i18n="farm.d6">Eigen software: CMS, kassa, AI-assistenten en zorgtools. Eén ecosysteem.</span>
+            <span class="mono plot-url">tinycare.eu</span>
+          </a>
         </div>
       </section>
 
-      <section class="section method reveal" id="method">
+      <!-- ============ METHODE LOOP ============ -->
+      <section class="method" id="method">
         <div class="section-head">
-          <p class="eyebrow">De methode</p>
-          <h2>Een helder traject in 5 bewegingen</h2>
+          <span class="mono section-label" data-i18n="method.label">de methode</span>
+          <h2 class="section-title" data-i18n="method.title">Vijf bewegingen. Eén loop.</h2>
+          <p class="section-sub" data-i18n="method.sub">
+            Elk traject loopt door dezelfde cyclus. Niet één keer, maar telkens opnieuw. Zo blijft
+            een systeem leven in plaats van te verslijten.
+          </p>
         </div>
-        <div class="method-grid">
-          <ol class="method-steps stagger">
+        <div class="loop-wrap">
+          <div class="loop-visual" aria-hidden="true">
+            <svg class="loop-svg" viewBox="0 0 420 420">
+              <circle class="loop-ring" cx="210" cy="210" r="170" />
+              <circle class="loop-ring loop-ring-dash" cx="210" cy="210" r="140" />
+              <circle class="loop-runner" cx="210" cy="40" r="7" />
+            </svg>
+            <span class="mono loop-center" data-i18n="method.loop">loop &#8734;</span>
+          </div>
+          <ol class="loop-steps">
             <li>
-              <strong>Diagnose:</strong> we lezen het systeem zoals het echt werkt, niet zoals het ooit ontworpen is.
+              <span class="mono loop-step-num">01</span>
+              <div>
+                <h3 data-i18n="method.s1">Diagnose</h3>
+                <p data-i18n="method.s1t">We lezen het systeem zoals het echt werkt, niet zoals het ooit ontworpen is.</p>
+              </div>
             </li>
             <li>
-              <strong>Design:</strong> we herschrijven de flow en maken keuzes die teams begrijpen.
+              <span class="mono loop-step-num">02</span>
+              <div>
+                <h3 data-i18n="method.s2">Design</h3>
+                <p data-i18n="method.s2t">We herschrijven de flow en maken keuzes die teams begrijpen.</p>
+              </div>
             </li>
             <li>
-              <strong>Activatie:</strong> training, ritme en rituelen zodat nieuw gedrag blijft hangen.
+              <span class="mono loop-step-num">03</span>
+              <div>
+                <h3 data-i18n="method.s3">Activatie</h3>
+                <p data-i18n="method.s3t">Training, ritme en rituelen zodat nieuw gedrag blijft hangen.</p>
+              </div>
             </li>
             <li>
-              <strong>Digitalisering:</strong> software die de flow versterkt in plaats van vertraagt.
+              <span class="mono loop-step-num">04</span>
+              <div>
+                <h3 data-i18n="method.s4">Digitalisering</h3>
+                <p data-i18n="method.s4t">Software die de flow versterkt in plaats van vertraagt.</p>
+              </div>
             </li>
             <li>
-              <strong>Momentum:</strong> meetpunten, ownership en feedback loops die groei dragen.
+              <span class="mono loop-step-num">05</span>
+              <div>
+                <h3 data-i18n="method.s5">Momentum</h3>
+                <p data-i18n="method.s5t">Meetpunten, ownership en feedback loops die groei dragen.</p>
+              </div>
             </li>
           </ol>
-          <div class="flow-map" aria-hidden="true">
-            <div class="flow-node">Intake</div>
-            <div class="flow-line"></div>
-            <div class="flow-node">Werkvloer</div>
-            <div class="flow-line"></div>
-            <div class="flow-node">Kwaliteit</div>
-            <div class="flow-line"></div>
-            <div class="flow-node">Delivery</div>
-            <div class="flow-glow"></div>
-          </div>
         </div>
       </section>
 
-      <section class="section reveal" id="mo">
+      <!-- ============ TRACK RECORD ============ -->
+      <section class="proof" id="proof">
         <div class="section-head">
-          <p class="eyebrow">MO · Modus Operandi</p>
-          <h2>Zo werk ik: helder, gedisciplineerd en mensgericht</h2>
+          <span class="mono section-label" data-i18n="proof.label">track record</span>
+          <h2 class="section-title" data-i18n="proof.title">Cijfers die niet liegen.</h2>
         </div>
-        <div class="system-grid stagger">
-          <article class="card">
-            <h3>1. Diagnose &amp; scherpte</h3>
-            <p>We visualiseren bottlenecks en koppelen elke stap aan impact op klant, marge en kwaliteit.</p>
-          </article>
-          <article class="card">
-            <h3>2. Ritme &amp; standaard</h3>
-            <p>Consistente processen zorgen voor snelheid zonder kwaliteitsverlies, van intake tot oplevering.</p>
-          </article>
-          <article class="card">
-            <h3>3. Ownership &amp; feedback</h3>
-            <p>Met meetpunten en duidelijke ownership maak ik verbetering herhaalbaar en schaalbaar.</p>
-          </article>
-        </div>
-        <div class="mo-detail stagger">
-          <div class="mo-card">
-            <p class="mo-title">Mijn belofte</p>
-            <p>Je krijgt een plan dat teams begrijpen en een flow die zichtbaar beter werkt. Binnen weken, niet maanden.</p>
+        <div class="proof-grid">
+          <div class="proof-card">
+            <p class="proof-num mono"><span data-count="20">0</span>+</p>
+            <p class="proof-text" data-i18n="proof.c1">jaar automotive, gestart in carrosserie en special painting</p>
           </div>
-          <div class="mo-card">
-            <p class="mo-title">Hoe het voelt</p>
-            <p>Minder ruis, meer richting. Geen micromanagement, wel duidelijke ownership en tempo.</p>
+          <div class="proof-card">
+            <p class="proof-num mono">#<span data-count="1">0</span></p>
+            <p class="proof-text" data-i18n="proof.c2">consultant bij Carya, de marktleider in DMS voor automotive</p>
           </div>
-          <div class="mo-card">
-            <p class="mo-title">De signatuur</p>
-            <p>Het systeem klopt, maar het blijft menselijk. Dat is de Motouzani-manier.</p>
+          <div class="proof-card">
+            <p class="proof-num mono"><span data-count="30">0</span>+</p>
+            <p class="proof-text" data-i18n="proof.c3">systemen gebouwd en beheerd via Digital Farmers</p>
+          </div>
+          <div class="proof-card">
+            <p class="proof-num mono"><span data-count="1">0</span></p>
+            <p class="proof-text" data-i18n="proof.c4">signatuur. Er is maar één Motouzani.</p>
           </div>
         </div>
-        <div class="mo-visual" aria-hidden="true">
-          <div class="mo-ring"></div>
-          <div class="mo-ring mo-ring-alt"></div>
-          <div class="mo-core">
-            <span>Mens</span>
-            <span>Proces</span>
-            <span>Software</span>
-          </div>
+        <div class="proof-quotes">
+          <blockquote>
+            <p data-i18n="proof.q1">"We voelen eindelijk richting en rust tegelijk. Het team beweegt sneller zonder extra druk."</p>
+            <cite class="mono" data-i18n="proof.q1m">operationeel manager</cite>
+          </blockquote>
+          <blockquote>
+            <p data-i18n="proof.q2">"Zijn kracht is dat hij het hele systeem leest: mensen, data en gedrag."</p>
+            <cite class="mono" data-i18n="proof.q2m">training lead</cite>
+          </blockquote>
         </div>
       </section>
 
-      <section class="section reveal" id="proof">
-        <div class="section-head">
-          <p class="eyebrow">Ervaring die vertrouwen creëert</p>
-          <h2>Track record</h2>
-        </div>
-        <div class="partner-row">
-          <span class="partner-label">Partner</span>
-          <span class="partner-name">BMW CFD Training Center</span>
-        </div>
-        <div class="metrics stagger">
-          <article>
-            <p class="metric">20+ jaar</p>
-            <p>Automotive ervaring, gestart als carrossier &amp; special painter (2008)</p>
-          </article>
-          <article>
-            <p class="metric">Marktleider</p>
-            <p>Consultant bij Carya, het DMS waarop de grootste dealergroepen draaien</p>
-          </article>
-          <article>
-            <p class="metric">Tientallen systemen</p>
-            <p>Sites, platformen en automatisering gebouwd en beheerd via Digital Farmers</p>
-          </article>
-        </div>
-        <div class="quote-grid stagger">
-          <article class="quote-card">
-            <p class="quote-text">"We voelen eindelijk richting en rust tegelijk. Het team beweegt sneller zonder extra druk."</p>
-            <p class="quote-meta">Operationeel manager</p>
-          </article>
-          <article class="quote-card">
-            <p class="quote-text">"Zijn kracht is dat hij het hele systeem leest: mensen, data en gedrag."</p>
-            <p class="quote-meta">Training lead</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact reveal" id="contact">
-        <div>
-          <p class="eyebrow">Let's build momentum</p>
-          <h2>Klaar om jouw systeem te versterken?</h2>
-          <p>
-            Stuur me een bericht voor consultancy, training of een digitaal project. Ik denk praktisch, snel en
-            resultaatgericht mee. Geef me jouw uitdaging en ik toon je hoe het Motouzani-effect werkt in jouw realiteit.
-          </p>
-          <div class="contact-info">
-            <div>
-              <p class="contact-label">Reactietijd</p>
-              <p>Gewoonlijk binnen 24 tot 48 uur. Snelheid zonder oppervlakkigheid.</p>
-            </div>
-            <div>
-              <p class="contact-label">Werkgebied</p>
-              <p>Belux &amp; internationale automotive teams. Op locatie of hybride.</p>
-            </div>
-            <div>
-              <p class="contact-label">Ideale start</p>
-              <p>Een korte intake call om flow, doelen en prioriteiten te definiëren.</p>
-            </div>
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <span class="mono section-label" data-i18n="contact.label">laatste hoofdstuk · het jouwe</span>
+            <h2 class="section-title" data-i18n="contact.title">Klaar om jouw systeem te bouwen?</h2>
+            <p class="section-sub" data-i18n="contact.sub">
+              Consultancy, training of een digitaal project: geef me jouw uitdaging en ik toon je
+              hoe het Motouzani-effect werkt in jouw realiteit. Reactie binnen 24 tot 48 uur.
+            </p>
+            <p class="mono contact-direct">
+              <span data-i18n="contact.direct">liever direct?</span>
+              <a class="inline-link" href="mailto:mo@digitalfarmers.be">mo@digitalfarmers.be</a>
+            </p>
           </div>
+          <form class="contact-form" method="post" action="contact.php" id="contact-form">
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+            <label>
+              <span class="mono" data-i18n="form.name">naam</span>
+              <input type="text" name="name" required maxlength="120" data-i18n-ph="form.namePh" placeholder="Jouw naam" />
+            </label>
+            <label>
+              <span class="mono" data-i18n="form.email">e-mail</span>
+              <input type="email" name="email" required maxlength="180" placeholder="jij@bedrijf.be" />
+            </label>
+            <label>
+              <span class="mono" data-i18n="form.topic">waarover</span>
+              <select name="topic">
+                <option data-i18n="form.o1">Consultancy</option>
+                <option data-i18n="form.o2">Training</option>
+                <option data-i18n="form.o3">Digitaal project</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono" data-i18n="form.msg">jouw uitdaging</span>
+              <textarea name="message" rows="4" required maxlength="4000" data-i18n-ph="form.msgPh" placeholder="Waar wil je dat het sneller, beter of duidelijker wordt?"></textarea>
+            </label>
+            <input type="text" name="company_site" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="btn btn-solid btn-wide" type="submit" data-i18n="form.send">Verstuur aanvraag</button>
+          </form>
         </div>
-        <form class="contact-card" method="post" action="contact.php" id="contact-form">
-          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
-          <label>
-            Naam
-            <input type="text" name="name" placeholder="Jouw naam" required maxlength="120" />
-          </label>
-          <label>
-            E-mail
-            <input type="email" name="email" placeholder="jij@bedrijf.be" required maxlength="180" />
-          </label>
-          <label>
-            Waarover?
-            <select name="topic">
-              <option>Consultancy</option>
-              <option>Training</option>
-              <option>Digitaal project</option>
-            </select>
-          </label>
-          <label>
-            Doel of uitdaging
-            <textarea name="message" rows="4" placeholder="Waar wil je dat het team sneller, beter of duidelijker wordt?" required maxlength="4000"></textarea>
-          </label>
-          <input type="text" name="company_site" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
-          <p class="form-alt">Liever direct? <a class="inline-link" href="mailto:mo@digitalfarmers.be">mo@digitalfarmers.be</a></p>
-        </form>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-title">Mo Touzani</p>
-          <p class="footer-text">Systeembouwer. Consultant bij Carya, founder van Digital Farmers.</p>
-        </div>
-        <div>
-          <p class="footer-title">Contact</p>
-          <p class="footer-text"><a class="inline-link" href="mailto:mo@digitalfarmers.be">mo@digitalfarmers.be</a></p>
-        </div>
-        <div>
-          <p class="footer-title">Signatuur</p>
-          <p class="footer-text">Only 1 Motouzani. Van hero tot footer voelbaar.</p>
-        </div>
+      <div class="footer-inner">
+        <p class="mono footer-sig">only1motouzani <span class="boot-ok">TRUE</span></p>
+        <p class="footer-text">
+          © <span id="year"></span> Mo Touzani · motouzani.com ·
+          <a class="inline-link" href="https://digitalfarmers.be" rel="noopener">digitalfarmers.be</a>
+        </p>
       </div>
-      <p class="footer-note">© <span id="year"></span> Mo Touzani · motouzani.com · <a class="inline-link" href="https://digitalfarmers.be" rel="noopener">digitalfarmers.be</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt"
+      crossorigin="anonymous" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"
+      crossorigin="anonymous" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/field.js" defer></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>
