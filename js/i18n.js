@@ -88,7 +88,7 @@
       "form.send": "Verstuur aanvraag",
       "form.sending": "Versturen…",
       "form.ok": "Bedankt! Je aanvraag is verstuurd. Je hoort snel van me.",
-      "form.err": "Versturen mislukte. Mail me gerust rechtstreeks op mo@digitalfarmers.be.",
+      "form.err": "Versturen mislukte. Mail me gerust rechtstreeks op contact@motouzani.com.",
     },
     en: {
       "nav.cta": "Talk to me",
@@ -177,7 +177,7 @@
       "form.send": "Send request",
       "form.sending": "Sending…",
       "form.ok": "Thanks! Your request has been sent. You will hear from me soon.",
-      "form.err": "Sending failed. Feel free to mail me directly at mo@digitalfarmers.be.",
+      "form.err": "Sending failed. Feel free to mail me directly at contact@motouzani.com.",
     },
   };
 

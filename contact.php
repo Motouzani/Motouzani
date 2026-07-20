@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 header('Content-Type: application/json; charset=utf-8');
 
-const ADMIN_EMAIL = 'mo@digitalfarmers.be';
+const ADMIN_EMAIL = 'contact@motouzani.com';
 const FROM_EMAIL = 'no-reply@motouzani.com';
 const LEAD_LOG = __DIR__ . '/leads/leads.jsonl';
 const RATE_LIMIT_DIR = __DIR__ . '/leads/rate';
@@ -110,7 +110,7 @@ $confirmSubject = mb_encode_mimeheader('Je aanvraag is goed ontvangen', $encodin
 $confirmBody = "Dag {$safeName},\n\n"
     . "Bedankt voor je bericht via motouzani.com. Ik heb je aanvraag rond \"{$topic}\" goed ontvangen\n"
     . "en kom er gewoonlijk binnen 24 tot 48 uur op terug.\n\n"
-    . "Wil je intussen al iets delen of is het dringend? Mail me rechtstreeks op mo@digitalfarmers.be.\n\n"
+    . "Wil je intussen al iets delen of is het dringend? Mail me rechtstreeks op contact@motouzani.com.\n\n"
     . "Tot snel,\n"
     . "Mo Touzani\n"
     . "motouzani.com\n";
@@ -123,7 +123,7 @@ $confirmHeaders = implode("\r\n", [
 mail($email, $confirmSubject, $confirmBody, $confirmHeaders);
 
 if (!$adminSent) {
-    respond(500, ['ok' => false, 'error' => 'Versturen mislukte. Mail me rechtstreeks op mo@digitalfarmers.be.']);
+    respond(500, ['ok' => false, 'error' => 'Versturen mislukte. Mail me rechtstreeks op contact@motouzani.com.']);
 }
 
 respond(200, ['ok' => true]);
