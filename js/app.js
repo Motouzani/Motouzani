@@ -64,7 +64,7 @@
       const inner = chapter.querySelector(".chapter-sticky");
       gsap.fromTo(
         inner,
-        { opacity: 0.25 },
+        { opacity: 0.55 },
         {
           opacity: 1,
           ease: "none",
