@@ -4,7 +4,8 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?]
 RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
 
-# Tenant CMS-login via eigen domein (consistentie alle tenants)
+# Tenant CMS-login via eigen domein (consistentie alle tenants, admin altijd op /admin)
+RewriteRule ^admin/?$ https://cms.digitalfarmers.be/login [L,R=302]
 RewriteRule ^login/?$ https://cms.digitalfarmers.be/login [L,R=302]
 RewriteRule ^auth/login/?$ https://cms.digitalfarmers.be/login [L,R=302]
 
