@@ -8,6 +8,35 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* ---------- thema (dark default, light optioneel) ---------- */
+  const rootEl = document.documentElement;
+  const storedTheme = localStorage.getItem("theme");
+  const prefersLight =
+    window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  if (storedTheme === "light" || (!storedTheme && prefersLight)) {
+    rootEl.setAttribute("data-theme", "light");
+  }
+
+  const themeToggle = document.querySelector(".theme-toggle");
+  const updateThemeIcon = () => {
+    const icon = document.querySelector(".theme-icon");
+    if (icon) icon.textContent = rootEl.getAttribute("data-theme") === "light" ? "☀" : "◐";
+  };
+  updateThemeIcon();
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const isLight = rootEl.getAttribute("data-theme") === "light";
+      if (isLight) {
+        rootEl.removeAttribute("data-theme");
+        localStorage.setItem("theme", "dark");
+      } else {
+        rootEl.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+      updateThemeIcon();
+    });
+  }
+
   /* ---------- boot-sequence (één keer per sessie) ---------- */
   const boot = document.getElementById("boot");
   const runBoot = boot && !sessionStorage.getItem("booted") && !prefersReduced;

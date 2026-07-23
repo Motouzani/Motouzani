@@ -77,9 +77,11 @@
     ctx.clearRect(0, 0, W, H);
 
     const cm = current.colorMix;
-    const r = Math.round(11 + (63 - 11) * cm);
-    const g = Math.round(90 + (227 - 90) * cm);
-    const b = Math.round(60 + (143 - 60) * cm);
+    const isLight = document.documentElement.getAttribute("data-theme") === "light";
+    /* dark: diep -> fel groen; light: fel te licht op creme, dus donkerder bereik */
+    const r = isLight ? Math.round(6 + (11 - 6) * cm) : Math.round(11 + (63 - 11) * cm);
+    const g = isLight ? Math.round(60 + (110 - 60) * cm) : Math.round(90 + (227 - 90) * cm);
+    const b = isLight ? Math.round(41 + (70 - 41) * cm) : Math.round(60 + (143 - 60) * cm);
 
     for (const p of particles) {
       const angle = noise(p.x, p.y, t + p.phase) * Math.PI * 2;

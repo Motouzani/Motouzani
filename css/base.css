@@ -10,6 +10,8 @@
   --accent-deep: #0b5a3c;
   --line: rgba(63, 227, 143, 0.16);
   --line-strong: rgba(63, 227, 143, 0.35);
+  --df-blue: #1f3c88;
+  --df-orange: #e68404;
 
   --serif: "Fraunces", serif;
   --sans: "Manrope", system-ui, sans-serif;
@@ -21,6 +23,59 @@
   --space-section: clamp(6rem, 4rem + 8vw, 12rem);
 
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-theme="light"] {
+  --void: #f4f5ef;
+  --void-2: #eef1e9;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-solid: #ffffff;
+  --ink: #10201a;
+  --ink-soft: #4c635a;
+  --accent: #0b5a3c;
+  --accent-bright: #0e7a4f;
+  --accent-deep: #063c29;
+  --line: rgba(11, 90, 60, 0.16);
+  --line-strong: rgba(11, 90, 60, 0.38);
+}
+
+html[data-theme="light"] .hero-accent {
+  text-shadow: 0 0 50px rgba(11, 90, 60, 0.2);
+}
+
+html[data-theme="light"] .grain {
+  opacity: 0.04;
+  background-image: radial-gradient(#0b5a3c 0.5px, transparent 0.5px);
+}
+
+html[data-theme="light"] .site-nav {
+  background: linear-gradient(180deg, rgba(244, 245, 239, 0.9), transparent);
+}
+
+html[data-theme="light"] .nav-cta,
+html[data-theme="light"] .btn-solid {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+html[data-theme="light"] .lang-toggle,
+html[data-theme="light"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme="light"] .chapter-points li,
+html[data-theme="light"] .flow-step {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme="light"] .contact-form input,
+html[data-theme="light"] .contact-form select,
+html[data-theme="light"] .contact-form textarea {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+html[data-theme="light"] .boot {
+  background: var(--void);
 }
 
 * {
@@ -165,6 +220,25 @@ main,
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.theme-toggle {
+  border: 1px solid var(--line);
+  background: rgba(5, 13, 10, 0.6);
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  transition: border-color 0.25s ease, transform 0.4s var(--ease-expo);
+}
+
+.theme-toggle:hover {
+  border-color: var(--line-strong);
+  transform: rotate(180deg);
 }
 
 .lang-toggle {
@@ -504,6 +578,34 @@ main,
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.9rem;
+}
+
+.df-signature {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.df-link {
+  text-decoration: none;
+  font-weight: 800;
+  transition: filter 0.25s ease;
+}
+
+.df-link:hover {
+  filter: brightness(1.25);
+}
+
+.df-blue {
+  color: var(--df-blue);
+}
+
+.df-orange {
+  color: var(--df-orange);
+}
+
+html:not([data-theme="light"]) .df-blue {
+  color: #6b8fe8;
 }
 
 /* ---------- keyframes ---------- */
