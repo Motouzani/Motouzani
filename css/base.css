@@ -28,9 +28,9 @@
   --surface: #0f1213;
   --ink: #eaedef;
   --muted: #8a9298;
-  --accent: #e68404;
+  --accent: #37c88f;
   --accent-ink: #0a0c0d;
-  --accent-soft: rgba(230, 132, 4, 0.12);
+  --accent-soft: rgba(55, 200, 143, 0.12);
   --line: rgba(234, 237, 239, 0.1);
   --line-strong: rgba(234, 237, 239, 0.24);
   --grid-line: rgba(234, 237, 239, 0.05);
@@ -57,9 +57,9 @@ html[data-theme="light"] {
   --surface: #faf8f1;
   --ink: #16191b;
   --muted: #5c6268;
-  --accent: #94500a;
-  --accent-ink: #f7f4ec;
-  --accent-soft: rgba(148, 80, 10, 0.1);
+  --accent: #0b5a3c;
+  --accent-ink: #f4f1e9;
+  --accent-soft: rgba(11, 90, 60, 0.1);
   --line: rgba(22, 25, 27, 0.16);
   --line-strong: rgba(22, 25, 27, 0.36);
   --grid-line: rgba(22, 25, 27, 0.06);
@@ -258,8 +258,19 @@ main, .site-nav, .footer { position: relative; z-index: 1; }
   margin-top: 1.5rem;
   color: var(--ink);
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
-.hero-stamp .tick { color: var(--accent); }
+
+/* farmer-avatar: handgetekende lijn-icoon, DF-knipoog */
+.farmer-mark {
+  width: 30px;
+  height: 30px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.footer .farmer-mark { width: 22px; height: 22px; vertical-align: middle; margin-right: 0.5rem; }
 
 /* horizon-maatlijn 2008 > vandaag > 2126 */
 .horizon {

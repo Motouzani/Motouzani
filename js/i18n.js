@@ -10,7 +10,7 @@
       "hero.stamp": "vandaag gebouwd, vandaag live",
       "hero.now": "vandaag",
       "hero.sub":
-        "Elke rij in het register hieronder kwam binnen met iets dat vastliep: een proces, een platform, een heel bedrijf. Wat vertrok, is een systeem dat verder denkt dan de markt. Gebouwd om decennia te dragen, niet om een template te vullen.",
+        "Elke rij in het register hieronder kwam binnen met iets dat vastliep: een proces, een platform, een heel bedrijf. Wat vertrok, is een systeem dat verder denkt dan de markt. Gemeten in decennia, niet in trends.",
       "hero.cta1": "Breng het binnen",
       "hero.cta2": "Open het register",
       "hero.scroll": "scroll: het register opent",
@@ -18,15 +18,15 @@
       "ch1.label": "de vloer · 2008",
       "ch1.title": "Een laklaag liegt nooit.",
       "ch1.text":
-        "Kwaliteit leer je niet uit een handboek. In de carrosserie, tussen special painting en schadeherstel, zie je meteen wat klopt en wat niet. Wie daar heeft leren kijken, ziet in elk bedrijf binnen het uur waar het wringt.",
-      "ch1.p1": "carrosserie & special painting",
-      "ch1.p2": "teamleader accident advisor",
+        "Carrosserie is technologie. Lakdiktemeters die in microns meten, kleurformules, spuitcabines met gestuurde luchtstroom: perfectie is daar geen gevoel maar een meetwaarde. Wie zo heeft leren kijken, meet elk bedrijf op dezelfde manier. Exact, en zonder excuses.",
+      "ch1.p1": "lakdikte in microns",
+      "ch1.p2": "special painting & kleurtechnologie",
       "ch1.p3": "training in BMW HQ Belux",
 
       "ch2.label": "het systeem · automotive",
       "ch2.title": "Een dealer die goed draait, hoor je niet.",
       "ch2.text":
-        "Twintig jaar in de automotive, vandaag als software consultant bij Carya, tussen de grootste dealergroepen van het land. Elke flow van intake tot facturatie vertelt hetzelfde verhaal: waar data stokt, stokt het bedrijf. Meetbaar maken is het halve werk. De rest is ritme.",
+        "Twintig jaar automotive, van de werkvloer tot de software waar de grootste dealergroepen van het land op draaien. Elke flow van intake tot facturatie vertelt hetzelfde verhaal: waar data stokt, stokt het bedrijf. Meetbaar maken is het halve werk. De rest is ritme.",
 
       "ch3.label": "de code · Digital Farmers",
       "ch3.title": "Software hoort te werken terwijl jij slaapt.",
@@ -82,7 +82,7 @@
       "method.label": "05 · de methode",
       "method.title": "Vijf bewegingen. Eén loop.",
       "method.sub":
-        "Elk traject loopt door dezelfde cyclus. Niet één keer, maar telkens opnieuw. Zo blijft een systeem leven in plaats van te verslijten.",
+        "Elk traject loopt door dezelfde cyclus, zoals een veld door de seizoenen: zaaien, onderhouden, oogsten, opnieuw. Zo blijft een systeem leven in plaats van te verslijten.",
       "method.loop": "loop ∞",
       "method.s1": "Diagnose",
       "method.s1t": "We lezen het systeem zoals het echt werkt, niet zoals het ooit ontworpen is.",
@@ -137,7 +137,7 @@
       "hero.stamp": "built today, live today",
       "hero.now": "today",
       "hero.sub":
-        "Every row in the register below came in with something stuck: a process, a platform, an entire business. What left is a system that thinks further than the market. Built to carry decades, not to fill a template.",
+        "Every row in the register below came in with something stuck: a process, a platform, an entire business. What left is a system that thinks further than the market. Measured in decades, not in trends.",
       "hero.cta1": "Bring it in",
       "hero.cta2": "Open the register",
       "hero.scroll": "scroll: the register opens",
@@ -145,15 +145,15 @@
       "ch1.label": "the floor · 2008",
       "ch1.title": "A paint layer never lies.",
       "ch1.text":
-        "You do not learn quality from a manual. In the body shop, between special painting and collision repair, you instantly see what is right and what is not. Anyone who learned to look there spots what is off in any business within the hour.",
-      "ch1.p1": "body shop & special painting",
-      "ch1.p2": "team leader accident advisor",
+        "Body work is technology. Paint thickness gauges measuring in microns, colour formulas, spray booths with controlled airflow: perfection there is not a feeling but a measurement. Anyone who learned to look that way measures every business the same. Exact, without excuses.",
+      "ch1.p1": "paint depth in microns",
+      "ch1.p2": "special painting & colour technology",
       "ch1.p3": "training at BMW HQ Belux",
 
       "ch2.label": "the system · automotive",
       "ch2.title": "A dealership that runs well makes no noise.",
       "ch2.text":
-        "Twenty years in automotive, today as software consultant at Carya, among the country's largest dealer groups. Every flow from intake to invoicing tells the same story: where data stalls, the business stalls. Making it measurable is half the work. The rest is rhythm.",
+        "Twenty years in automotive, from the shop floor to the software the country's largest dealer groups run on. Every flow from intake to invoicing tells the same story: where data stalls, the business stalls. Making it measurable is half the work. The rest is rhythm.",
 
       "ch3.label": "the code · Digital Farmers",
       "ch3.title": "Software should work while you sleep.",
@@ -209,7 +209,7 @@
       "method.label": "05 · the method",
       "method.title": "Five moves. One loop.",
       "method.sub":
-        "Every project runs through the same cycle. Not once, but again and again. That is how a system stays alive instead of wearing out.",
+        "Every project runs through the same cycle, like a field through the seasons: sow, maintain, harvest, again. That is how a system stays alive instead of wearing out.",
       "method.loop": "loop ∞",
       "method.s1": "Diagnosis",
       "method.s1t": "We read the system as it really works, not as it was once designed.",

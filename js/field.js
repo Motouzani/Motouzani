@@ -78,10 +78,10 @@
 
     const cm = current.colorMix;
     const isLight = document.documentElement.getAttribute("data-theme") === "light";
-    /* blueprint: neutraal grijs dat naar DF-oranje mengt naarmate het systeem 'aanslaat' */
-    const r = isLight ? Math.round(92 + (192 - 92) * cm) : Math.round(138 + (230 - 138) * cm);
-    const g = isLight ? Math.round(98 + (104 - 98) * cm) : Math.round(146 + (132 - 146) * cm);
-    const b = isLight ? Math.round(104 + (0 - 104) * cm) : Math.round(152 + (4 - 152) * cm);
+    /* blueprint: neutraal grijs dat naar rolex-groen mengt naarmate het systeem 'aanslaat' */
+    const r = isLight ? Math.round(92 + (11 - 92) * cm) : Math.round(138 + (55 - 138) * cm);
+    const g = isLight ? Math.round(98 + (90 - 98) * cm) : Math.round(146 + (200 - 146) * cm);
+    const b = isLight ? Math.round(104 + (60 - 104) * cm) : Math.round(152 + (143 - 152) * cm);
 
     for (const p of particles) {
       const angle = noise(p.x, p.y, t + p.phase) * Math.PI * 2;
