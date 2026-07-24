@@ -69,11 +69,12 @@
     /* reveals */
     const revealTargets = [
       ".section-head",
-      ".plot",
+      ".reg-row",
+      ".reg-foot",
       ".loop-visual",
       ".loop-steps li",
       ".proof-card",
-      ".proof-quotes blockquote",
+      ".proof-claim blockquote",
       ".contact-copy",
       ".contact-form",
     ];

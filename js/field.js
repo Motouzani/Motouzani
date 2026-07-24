@@ -78,10 +78,10 @@
 
     const cm = current.colorMix;
     const isLight = document.documentElement.getAttribute("data-theme") === "light";
-    /* dark: diep -> fel groen; light: fel te licht op creme, dus donkerder bereik */
-    const r = isLight ? Math.round(6 + (11 - 6) * cm) : Math.round(11 + (63 - 11) * cm);
-    const g = isLight ? Math.round(60 + (110 - 60) * cm) : Math.round(90 + (227 - 90) * cm);
-    const b = isLight ? Math.round(41 + (70 - 41) * cm) : Math.round(60 + (143 - 60) * cm);
+    /* blueprint: neutraal grijs dat naar DF-oranje mengt naarmate het systeem 'aanslaat' */
+    const r = isLight ? Math.round(92 + (192 - 92) * cm) : Math.round(138 + (230 - 138) * cm);
+    const g = isLight ? Math.round(98 + (104 - 98) * cm) : Math.round(146 + (132 - 146) * cm);
+    const b = isLight ? Math.round(104 + (0 - 104) * cm) : Math.round(152 + (4 - 152) * cm);
 
     for (const p of particles) {
       const angle = noise(p.x, p.y, t + p.phase) * Math.PI * 2;
@@ -153,7 +153,7 @@
     resize();
     initParticles();
     ctx.clearRect(0, 0, W, H);
-    ctx.fillStyle = "rgb(30,120,80)";
+    ctx.fillStyle = "rgb(120,126,132)";
     for (const p of particles) {
       ctx.globalAlpha = 0.18;
       ctx.beginPath();

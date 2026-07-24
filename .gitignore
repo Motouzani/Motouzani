@@ -1,0 +1,17 @@
+.DS_Store
+.claude/
+.playwright-mcp/
+reference/
+sales/
+leads/
+*.zip
+*.jpeg
+staging-*.png
+countdown-public.png
+demo-cinema.html
+DF-SSO-DEMO-SCRIPT.md
+DF_PLATFORM_CLAUDE_MASTER_HANDOFF_*.md
+ECLIPSE_MASTERPLAN_*.md
+NOTE-VOOR-CODEX-*.md
+PRODUCT-DOMAIN-REGISTRY.md
+MOTOUZANI_SITE_*.md
