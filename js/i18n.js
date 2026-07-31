@@ -105,7 +105,13 @@
         "Geen verzonnen testimonials op deze pagina. Het register staat hierboven en is publiek: klik door, kijk zelf, oordeel zelf.",
       "proof.q1m": "bewijs boven beloftes",
 
-      "contact.label": "07 · jouw rij in het register",
+      "bridge.label": "07 · de farm",
+      "bridge.title": "Hier wordt gemeten. Op de farm wordt geoogst.",
+      "bridge.sub":
+        "Achter elk systeem in het register staat hetzelfde huis: Digital Farmers, het team dat Mo bouwde. Eigen servers, eigen CMS, eigen AI-tooling. Wie een heel veld wil in plaats van een rij, klopt daar aan.",
+      "bridge.cta": "Bezoek de farm: digitalfarmers.be",
+
+      "contact.label": "08 · jouw rij in het register",
       "contact.title": "Wat mag hier binnenkomen?",
       "contact.sub":
         "Een proces dat sleept, een systeem dat ontbreekt, of gewoon een gesprek dat je al even wil voeren. Alles mag binnen. Reactie binnen 24 tot 48 uur.",
@@ -232,7 +238,13 @@
         "No invented testimonials on this page. The register is right above and it is public: click through, look for yourself, judge for yourself.",
       "proof.q1m": "proof over promises",
 
-      "contact.label": "07 · your row in the register",
+      "bridge.label": "07 · the farm",
+      "bridge.title": "Here things get measured. On the farm they get harvested.",
+      "bridge.sub":
+        "Behind every system in the register stands the same house: Digital Farmers, the team Mo built. Own servers, own CMS, own AI tooling. If you want a whole field instead of one row, that is where you knock.",
+      "bridge.cta": "Visit the farm: digitalfarmers.be",
+
+      "contact.label": "08 · your row in the register",
       "contact.title": "What may come in here?",
       "contact.sub":
         "A process that drags, a system that is missing, or simply a conversation you have been meaning to have. Everything is welcome. Reply within 24 to 48 hours.",

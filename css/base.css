@@ -476,6 +476,77 @@ main, .site-nav, .footer { position: relative; z-index: 1; }
 .form-status.ok { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 .form-status.err { color: #e05252; border-color: #e05252; }
 
+/* ---------- de farm: brug naar Digital Farmers ---------- */
+.bridge {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: var(--space-section) 0;
+}
+.bridge-inner {
+  padding: 0 var(--pad-x);
+  max-width: 78rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+}
+.bridge-farmer {
+  width: clamp(64px, 8vw, 110px);
+  height: auto;
+  margin-top: 0.4rem;
+}
+.bridge-cta { margin-top: 1.8rem; }
+.farmer-link { color: var(--accent); display: inline-block; }
+.farmer-link:hover .farmer-mark { transform: translateY(-2px); }
+.farmer-link .farmer-mark { transition: transform var(--dur) var(--ease); }
+
+/* ---------- lakdiktemeter: scrolldiepte in microns ---------- */
+.micron {
+  position: fixed;
+  right: var(--pad-x);
+  bottom: 1.2rem;
+  z-index: 40;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--void) 88%, transparent);
+  border: 1px solid var(--line-strong);
+  padding: 0.4rem 0.65rem;
+  font-size: 0.64rem;
+  pointer-events: none;
+  text-transform: none;
+}
+.micron #micron-val { color: var(--accent); font-weight: 600; }
+
+/* ---------- farmer-mode (easter egg: typ "farmer") ---------- */
+.farmer-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 3.4rem;
+  transform: translateX(-50%);
+  z-index: 70;
+  background: var(--void);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 1.1rem;
+  animation: toast-in 0.3s var(--ease);
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+body.farmer-mode .farmer-mark { animation: farmer-tip 0.9s var(--ease); }
+@keyframes farmer-tip {
+  0%, 100% { transform: rotate(0); }
+  30% { transform: rotate(-12deg) translateY(-3px); }
+  60% { transform: rotate(6deg); }
+}
+
 /* ---------- footer ---------- */
 .footer { border-top: 1px solid var(--line); padding: 2.6rem 0; }
 .footer-inner {
@@ -498,6 +569,8 @@ main, .site-nav, .footer { position: relative; z-index: 1; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .contact-inner { grid-template-columns: 1fr; }
+  .bridge-inner { grid-template-columns: 1fr; }
+  .bridge-farmer { width: 56px; }
 }
 @media (max-width: 640px) {
   .nav-cta { display: none; }

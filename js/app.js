@@ -75,6 +75,7 @@
       ".loop-steps li",
       ".proof-card",
       ".proof-claim blockquote",
+      ".bridge-inner",
       ".contact-copy",
       ".contact-form",
     ];
@@ -162,6 +163,88 @@
   window.addEventListener("load", () => {
     if (!initGsap()) initFallback();
   });
+
+  /* ---------- levend register: echte metingen, geen decoratie ---------- */
+  const enhanceRegister = async () => {
+    try {
+      const res = await fetch("status.php", { headers: { Accept: "application/json" } });
+      if (!res.ok) return;
+      const data = await res.json();
+      document.querySelectorAll("a.reg-row").forEach((row) => {
+        const host = new URL(row.href).hostname.replace(/^www\./, "");
+        const info = data.sites && data.sites[host];
+        const label = row.querySelector(".reg-status");
+        /* enkel opwaarderen bij bevestigde meting; statisch label blijft anders staan */
+        if (info && info.ok && label) {
+          label.textContent = "LIVE · " + info.ms + " ms";
+        }
+      });
+    } catch (error) {
+      /* stil: statische labels blijven correct */
+    }
+  };
+  enhanceRegister();
+  const langToggleEl = document.querySelector(".lang-toggle");
+  if (langToggleEl) {
+    langToggleEl.addEventListener("click", () => setTimeout(enhanceRegister, 60));
+  }
+
+  /* ---------- lakdiktemeter: scrolldiepte in microns (0-120 um) ---------- */
+  const micronVal = document.getElementById("micron-val");
+  if (micronVal && !prefersReduced) {
+    let micronTick = false;
+    const updateMicron = () => {
+      micronTick = false;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const depth = max > 0 ? Math.round((window.scrollY / max) * 120) : 0;
+      micronVal.textContent = String(depth);
+    };
+    window.addEventListener("scroll", () => {
+      if (!micronTick) {
+        micronTick = true;
+        requestAnimationFrame(updateMicron);
+      }
+    }, { passive: true });
+    updateMicron();
+  }
+
+  /* ---------- horizon-marker: exact berekend, niet geschat ---------- */
+  const horizonStart = Date.UTC(2008, 0, 1);
+  const horizonEnd = Date.UTC(2126, 0, 1);
+  const horizonPct = (((Date.now() - horizonStart) / (horizonEnd - horizonStart)) * 100).toFixed(2) + "%";
+  const horizonNow = document.querySelector(".horizon-now");
+  const horizonLbl = document.querySelector(".horizon-labels .now");
+  if (horizonNow) horizonNow.style.left = horizonPct;
+  if (horizonLbl) horizonLbl.style.left = horizonPct;
+
+  /* ---------- easter egg: typ "farmer" ---------- */
+  let typedBuffer = "";
+  document.addEventListener("keydown", (event) => {
+    if (event.target && /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
+    typedBuffer = (typedBuffer + event.key.toLowerCase()).slice(-6);
+    if (typedBuffer === "farmer" && !document.querySelector(".farmer-toast")) {
+      document.body.classList.add("farmer-mode");
+      if (window.MOTO_FIELD) window.MOTO_FIELD.setMode("spray");
+      const toast = document.createElement("a");
+      toast.className = "farmer-toast";
+      toast.href = "https://digitalfarmers.be";
+      toast.rel = "noopener";
+      toast.textContent = "farmer mode · digitalfarmers.be";
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        document.body.classList.remove("farmer-mode");
+        if (window.MOTO_FIELD) window.MOTO_FIELD.setMode("calm");
+        toast.remove();
+      }, 4000);
+    }
+  });
+
+  /* signatuur voor wie inspecteert */
+  console.log(
+    "%conly1motouzani TRUE%c\nGemeten, niet gegokt. Typ 'farmer' voor de knipoog.\nDesigned & developed by Digital Farmers · digitalfarmers.be",
+    "color:#37c88f;font-weight:bold;font-family:monospace;font-size:14px",
+    "color:#8a9298;font-family:monospace"
+  );
 
   /* ---------- formulier ---------- */
   const contactForm = document.getElementById("contact-form");
