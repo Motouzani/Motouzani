@@ -26,7 +26,7 @@
       "ch2.label": "het systeem · automotive",
       "ch2.title": "Een dealer die goed draait, hoor je niet.",
       "ch2.text":
-        "Twintig jaar automotive, van de werkvloer tot de software waar de grootste dealergroepen van het land op draaien. Elke flow van intake tot facturatie vertelt hetzelfde verhaal: waar data stokt, stokt het bedrijf. Meetbaar maken is het halve werk. De rest is ritme.",
+        "Twintig jaar automotive, van de werkvloer tot de software waar de grootste dealergroepen van het land op draaien. Elke flow van intake tot facturatie vertelt hetzelfde verhaal: waar data stilvalt, valt het bedrijf stil. Meetbaar maken is het halve werk. De rest is ritme.",
 
       "ch3.label": "de code · Digital Farmers",
       "ch3.title": "Software hoort te werken terwijl jij slaapt.",
